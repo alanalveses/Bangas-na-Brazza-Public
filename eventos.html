@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Bangas na Brazza</title>
+    <!--Link do css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/eventos.css">
+    <!--Link Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="img/icon-mas.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--Navegação-->
+        <div class="nav">
+            <!--Logo-->
+            <a href="index.html" class="logo">
+                <span>Bangas</span>Na <span>Brazza</span>
+            </a>
+            <!--Links navegação-->
+            <div class="navbar">
+                <li><a href="index.html" class="nav-link">Heróis</a></li>
+                <li><a href="guia.html" class="nav-link">Guia</a></li>
+                <li><a href="novo.html" class="nav-link">Atualizção</a></li>
+                <li class="dropdown">
+                    <a href="eventos.html" class="nav-link drop-btn">Eventos</a>
+                    <div class="dropdown-content">
+                        <a href="#news" class="nav-link">Notícias</a>
+                        <a href="#news" class="nav-link">Notícias</a>
+                        <a href="#news" class="nav-link">Notícias</a>
+                        <a href="#news" class="nav-link">Notícias</a>
+                    </div>
+                </li>
+                <!--Login Btn-->
+                <div class="login-btn">
+                    <span>Login</span>
+                    <i class='bx bx-chevron-down'></i>
+                    <!--|Drop box-->
+                    <div class="drop-login">
+                        <div class="drop-item">
+                            <a href="#">Area Do Cliente</a>
+                            <span>Perfil & Chat </span>
+                        </div>
+                        <div class="drop-item">
+                            <a href="#faq">Reportar Problema</a>
+                            <span>Suporte & Dúvidas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Menu Icon-->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Home Slide-->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!--Slide1-->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="img/herois-png/gord-legend-skin.jpg" alt="" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h1 class="slide-title" style="color: white;">Gord <span>Legend Skin Revamp</span></h1>
+                        <p class="slide-description">
+                            "Com o início da Temporada 30 do MLBB, os jogadores de todo o mundo estão se preparando para uma jornada épica de ação, estratégia e competição intensa. Com uma série de atualizações emocionantes, novos heróis, ajustes no jogo, renovção de heróis queridos e eventos fantásticos, esta temporada promete ser uma das mais emocionantes até agora. Os fãs podem esperar batalhas emocionantes, estratégias inovadoras e a busca pela glória nos campos de batalha. À medida que os jogadores se reúnem para mais um capítulo da aventura do MLBB, a empolgação está no ar."
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=2nkrzcD1gYs" target="_blank" class="btn">Ver Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <!--Slide2-->
+            <div class="swiper-slide">
+                <div class="home-slide">
+                    <img src="img/herois-png/martis-zodiac.jpg" alt="" class="slide-img">
+                    <div class="home-overlay"></div>
+                    <div class="home-text container">
+                        <h1 class="slide-title" style="color: white;">Martis <span>Zodiac Skin Revamp</span></h1>
+                        <p class="slide-description">
+                            "Com o início da Temporada 30 do MLBB, os jogadores de todo o mundo estão se preparando para uma jornada épica de ação, estratégia e competição intensa. Com uma série de atualizações emocionantes, novos heróis, ajustes no jogo, renovção de heróis queridos e eventos fantásticos, esta temporada promete ser uma das mais emocionantes até agora. Os fãs podem esperar batalhas emocionantes, estratégias inovadoras e a busca pela glória nos campos de batalha. À medida que os jogadores se reúnem para mais um capítulo da aventura do MLBB, a empolgação está no ar."
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=2nkrzcD1gYs" target="_blank" class="btn">Ver Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Eventos -->
+    <section class="events container">
+        <!-- Botões dos eventos -->
+        <div class="events-tabs">
+            <span class="events-tab" data-target="#sazonal">
+                Eventos Sazonais
+            </span>
+            <span class="events-tab active-tab" data-target="#iniciantes">
+                Eventos para Iniciantes
+            </span>
+            <span class="events-tab" data-target="#lojas">
+              Eventos de Loja
+            </span>
+        </div>
+
+        <!-- Conteúdo do Eventos -->
+        <div class="events-tabs-content">
+
+            <!-- Conteúdo dos Eventos Sazonais -->
+            <div class="events-tab-content " content id="sazonal">
+                <div class="evento-inicial">
+                    <!--Eventos Iniciais-->
+                    <h2 class="heading">Eventos para Sazionais</h2>
+                    <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
+
+                    <br><br>
+                    <p class="text-center">Veja na aba de eventos do jogo.</p>
+                    <div class="img-events container">
+                        <img src="img/Teste-Heroico.jpg" alt="">
+                        <img src="img/Teste-Heroico-Regras.jpg" alt="">
+                        <img src="img/Login-de-9-Dias.jpg" alt="">
+                        <img src="img/Login-de-9-Dias-Regras.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
+                    </div>
+                </div>              
+            </div>
+
+            <!-- Conteúdo dos Eventos para Iniciantes -->
+            <div class="events-tab-content active-tab" content id="iniciantes">
+                <div class="evento-inicial">
+                    <!--Eventos Iniciais-->
+                    <h2 class="heading">Eventos para Iniciantes</h2>
+                    <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
+
+                    <br><br>
+                    <p class="text-center">Veja na aba de eventos do jogo.</p>
+                    <div class="img-events container">
+                        <img src="img/Teste-Heroico.jpg" alt="">
+                        <img src="img/Teste-Heroico-Regras.jpg" alt="">
+                        <img src="img/Login-de-9-Dias.jpg" alt="">
+                        <img src="img/Login-de-9-Dias-Regras.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo dos Eventos de Loja -->
+            <div class="events-tab-content " content id="lojas">
+                <div class="evento-inicial">
+                    <!--Eventos Iniciais-->
+                    <h2 class="heading">Eventos para Loja</h2>
+                    <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
+
+                    <br><br>
+                    <p class="text-center">Veja na aba de eventos do jogo.</p>
+                    <div class="img-events container">
+                        <img src="img/Teste-Heroico.jpg" alt="">
+                        <img src="img/Teste-Heroico-Regras.jpg" alt="">
+                        <img src="img/Login-de-9-Dias.jpg" alt="">
+                        <img src="img/Login-de-9-Dias-Regras.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel.jpg" alt="">
+                        <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
+                    </div>
+                </div>              
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--Contro, Panel-->
+    <section class="control" id="control">
+        <!--COntrol Content-->
+        <div class="control-content container">
+            <div class="control-text">
+                <h2 class="control-title">
+                Configurações Recomendadas por Mim
+                </h2>
+                <p>Essas são as configurações que eu utilizo para jogar; considero básicas e de ótimo auxílio na jogatina.</p>
+                <div class="control-spec">
+                    <div class="spec-box">
+                        <i class='bx bxs-check-circle'></i>
+                        <span>"Selecionar Mira Avançada"</span>
+                    </div>
+                    <div class="spec-box">
+                        <i class='bx bxs-check-circle'></i>
+                        <span>"Priorizar Alvo Com Menor Porcentagem de HP"</span>
+                    </div>
+                    <div class="spec-box">
+                        <i class='bx bxs-check-circle'></i>
+                        <span>"Modo de Herói Fixado"</span>
+                     </div>
+                    <div class="spec-box">
+                        <i class='bx bxs-check-circle'></i>
+                        <span>"Mira Inteligente de Habilidade e Ataque Básico"</span>
+                     </div>
+                </div>
+            </div>
+            <!--Controle Imagem-->
+            <div class="control-images swiper">
+                <div class="swiper-wrapper">
+                    <!--Slide 1-->
+                    <div class="swiper-slide">
+                        <div class="control-img-box">
+                            <img src="img/config-1.jpg" alt="" class="control-img">
+                        </div>
+                    </div>
+                    <!--Slide 2-->
+                    <div class="swiper-slide">
+                        <div class="control-img-box">
+                            <img src="img/config-2.jpg" alt="" class="control-img">
+                        </div>
+                    </div>
+                   
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div class="footer container">
+        <div class="footer-box">
+            <a href="index.html" class="footer-logo">BangasNa<span>Brazza</span></a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h2 class="footer-title">Serviços de  Coach</h2>
+            <a href="#">Time Profissional</a>
+            <a href="#">Mundial</a>
+            <a href="#">LATAM</a>
+            <a href="#">MPL</a>
+        </div>
+        <div class="footer-box">
+            <h2 class="footer-title">empresa</h2>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contratos</a>
+            <a href="#">Termos de Serviços</a>
+            <a href="#">Politica de Privacidade</a>
+        </div>
+        <div class="footer-box">
+            <h2 class="footer-title">Suporte</h2>
+            <a href="#">Pegar Tickt</a>
+            <a href="#">Chat Online</a>
+            <a href="#">Status de Solicitação</a>
+        </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="copyright container">
+        <p>&#169; 2022-2023 BangasNaBrazza </p>
+        <div class="payments">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>  
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--Link js-->
+    <script src="/js/main.js"></script>
+    <script src="js/eventos.js"></script>
+</body>
+</html>

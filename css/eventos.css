@@ -1,0 +1,24 @@
+.events {
+
+}
+
+.events-tabs {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.events-tab {
+    color: crimson;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.events-tab.active-tab {
+    color: blue;
+}
+
+.events-tab-content:not(.active-tab) {
+    display: none;
+}
