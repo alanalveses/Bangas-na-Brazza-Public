@@ -1,0 +1,160 @@
+
+/* 
+                    Tutorial heroi em destaque
+*/
+
+.hero-tutorial {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+  
+.hero-tutorial-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 37.5rem;
+  border-radius: 10px;
+}
+
+.hero-tutorial-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/herois-destaque/nana-mobile-legends.jpg');
+  opacity: 0.6;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+.hero-tutorial-background h2 {
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+.hero-tutorial-background h2 span {
+  color: red;
+  font-size: 3.75rem;
+    
+}
+  
+.hero-tutorial-img {
+  width: 15.625rem;
+  height: 15.625rem;
+  background-image: url('../img/herois-destaque/nana-mobile-legends.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #ff4d55;
+  margin-top: 2rem;
+}
+
+.nana-skills {
+  width: 37.5rem;
+}
+
+.tutorial-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.galeria-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-galeria p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.item-galeria h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.item-galeria p img {
+  width: 1.5rem;
+}
+
+
+
+.skin-tag-icon {
+  width: 4rem;
+}
+
+.content-buttons-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.buttons-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.button-skill {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.button-skill h3 {
+  font-size: 1rem;
+}
+
+content-buttons-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.button-action {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.button-action.active {
+  background-color: #ddd;
+}
+
+.ctext-content-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.sub-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.sub-content.active {
+  display: block;
+}
