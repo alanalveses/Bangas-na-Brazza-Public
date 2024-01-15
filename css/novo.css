@@ -90,6 +90,30 @@
 
 /*Patch Note*/
 
+.buff {
+    background-color:green;
+    padding:2px 4px 2px 4px;
+    color:white;
+    font-size:10px;
+    vertical-align:middle;
+}
+
+.nerf {
+    background-color:#db1f28;
+    padding:2px 4px 2px 4px;
+    color:white;
+    font-size:10px;
+    vertical-align:middle;
+}
+
+.ajust {
+    background-color:#eb941a;
+    padding:2px 4px 2px 4px;
+    color:white;
+    font-size:10px;
+    vertical-align:middle;
+}  
+
 .patch, .patch-content {
     display: flex;
     flex-direction: column;

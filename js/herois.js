@@ -80,3 +80,30 @@ buttonLane.forEach(botao => {
 });
 
 filterHeros();
+
+
+// Abrir a seção de contato
+
+const openContat = document.getElementById('open-contact');
+
+const telaContact = document.getElementById('contact');
+
+openContat.addEventListener('click', () => toggleContact(telaContact));
+
+function toggleContact(element) {
+    element.style.display = element.style.display === 'none' ? 'block' : 'none';
+}
+
+//Refatorando o código
+// const openContact = document.getElementById('open-contact');
+// const telaContact = document.getElementById('contact');
+
+// openContact.addEventListener('click', () => toggleContact(telaContact));
+
+// function toggleContact(element) {
+//     if (element.style.display === 'none' || element.style.display === '') {
+//         element.style.display = 'block';
+//     } else {
+//         element.style.display = 'none';
+//     }
+// }

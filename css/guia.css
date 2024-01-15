@@ -189,7 +189,7 @@ ram-title span{
 }
 
 .disabled-button {
-    cursor: no-drop;
+    /* cursor: no-drop; */
 }
 
 

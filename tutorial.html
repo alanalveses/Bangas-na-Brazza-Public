@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!--Fav Icon-->
     <link rel="shortcut icon" href="img/icon-mas.png" type="image/x-icon">
-    
+
 </head>
 
 <body>
@@ -59,110 +60,273 @@
 
     <!-- Heroi em destaque -->
     <section class="tutorial container" id="tutorial">
-        
+
         <div class="hero-tutorial">
             <div class="hero-tutorial-background">
-                <h2>Conheça <span>Nana</span>, <br> a heroína em <span>destaque!</span></h2>
+                <h2> <span>Nana</span>, <br> a heroína em <span>destaque!</span></h2>
                 <div class="hero-tutorial-img">
                     <!-- <img src="/img/nana-skills.png" alt=""> -->
                 </div>
                 <img src="img/herois-destaque/nana-skills.png" class="nana-skills">
             </div>
         </div>
-        <div>
+        <div class="hero-tutorial-title">
             <h2 class="heading ">Herói em Destaque</h2>
         </div>
         <div class="tutorial-content">
             <div class="galeria-hero">
-                <div class="galeria-hero-main">
-                    <img src="img/herois-destaque/nana-mobile-legends.jpg" alt="">
+                <div class="galeria-hero-border">
+                    <div class="galeria-hero-main-alt">
+                        <img src="img/herois-destaque/nana-mobile-legends.jpg" class="line-grad" alt="">
+                        <div class="grafico-info">
+                            <div class="container-grafico">
+                                <div class="bar">
+                                    <p>Defesa</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p class="container-p">Ataque</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value1"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p>Efeito de Controle</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value2"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p>Dificuldade</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="galeria-hero-skins">
+                    <h2>Skins da Nana</h2>
                     <div class="galeria-content">
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-normal.jpg" alt="">
-                            <h3>Leonina Fofa</h3>
-                            <img src="" alt="">
-                            <p><img src="img/herois-destaque/battle-points.png" alt=""> 6.500 ou <img src="img/herois-destaque/diamond.png" alt=""> 299</p>
+                        <div class="item-galeria" id="nana-normal">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-normal.jpg" class="" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Leonina Fofa</h3>
+                                <p><img src="img/herois-destaque/battle-points.png" alt=""> 6.500 ou 
+                                    <img src="img/herois-destaque/diamond.png" alt=""> 299</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="nanaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-nana">&times;</span>
+                                <img src="img/herois-destaque/nana-normal-skin-png.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-aqua-pura.jpg" alt="">
-                            <h3>Aqua Pura</h3>
-                            <img src="img/herois-destaque/Collector_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p>Evento por tempo limitado</p>
+                        <div class="item-galeria" id="nana-aqua">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-aqua-pura.jpg" class="item-galeria-imagem" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Aqua Pura</h3>
+                                <img src="img/herois-destaque/Collector_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p>Evento por tempo limitado</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="aquaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-aqua">&times;</span>
+                                <img src="img/herois-png/mago/nana-collector.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-baby-mecha.jpg" alt="">
-                            <h3>Baby Mecha</h3>
-                            <img src="img/herois-destaque/Epic_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p> <img src="img/herois-destaque/diamond.png"> 899</p>
+                        <div class="item-galeria" id="nana-mecha">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-baby-mecha.jpg"class="item-galeria-imagem" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Baby Mecha</h3>
+                                <img src="img/herois-destaque/Epic_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p> <img src="img/herois-destaque/diamond.png"> 899</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="mechaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-mecha">&times;</span>
+                                <img src="img/herois-destaque/nana-transparent-mecha-baby.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-chapeu-de-verao.jpg" alt="">
-                            <h3>Chapéu de Verão</h3>
-                            <img src="img/herois-destaque/Summer_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p><img src="img/herois-destaque/diamond.png" alt=""> 749</p>
+                        <div class="item-galeria" id="nana-chapeu">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-chapeu-de-verao.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Chapéu de Verão</h3>
+                                <img src="img/herois-destaque/Summer_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p><img src="img/herois-destaque/diamond.png" alt=""> 749</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="chapeuExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-chapeu">&times;</span>
+                                <img src="img/herois-destaque/nana-chapeu-de-verao-transparent.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-criada-do-tempo.jpg" alt="">
-                            <h3>Criado do Tempo</h3>
-                            <img src="img/herois-destaque/Elite_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p> <img src="img/herois-destaque/diamond.png" alt=""> 399<p>                            
+                        <div class="item-galeria" id="nana-criada">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-criada-do-tempo.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Criado do Tempo</h3>
+                                <img src="img/herois-destaque/Elite_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p> <img src="img/herois-destaque/diamond.png" alt=""> 399
+                                <p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="criadaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-criada">&times;</span>
+                                <img src="img/herois-destaque/nana_transparent__clockwork_maid.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-elefantinho.png" alt="">
-                            <h3>Elefantinho</h3>
-                            <img src="img/herois-destaque/Elite_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p> <img src="img/herois-destaque/diamond.png" alt=""> 599</p>
+                        <div class="item-galeria" id="nana-elefantinho">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-elefantinho.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Elefantinho</h3>
+                                <img src="img/herois-destaque/Elite_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p> <img src="img/herois-destaque/diamond.png" alt=""> 599</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="elefantinhoExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-elefantinho">&times;</span>
+                                <img src="img/herois-destaque/nana-elefantinho-transparent.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-fada-do-vento.jpg" alt="">
-                            <h3>Fada do Vento</h3>
-                            <img src="img/herois-destaque/MPL_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p>Skin exclusiva MPL</p>
+                        <div class="item-galeria" id="nana-fada">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-fada-do-vento.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Fada do Vento</h3>
+                                <img src="img/herois-destaque/MPL_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p>Skin exclusiva MPL</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="fadaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-fada">&times;</span>
+                                <img src="img/herois-destaque/nana_transparent__wind_fairy.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-festa-no-cemiterio.jpg" alt="">
-                            <h3>Festa no Cemitério</h3>
-                            <img src="img/herois-destaque/S1_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p>Loja de Fragmentos</p>
+                        <div class="item-galeria" id="nana-festa">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-festa-no-cemiterio.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Festa no Cemitério</h3>
+                                <img src="img/herois-destaque/S1_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p>Loja de Fragmentos</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="festaExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-festa">&times;</span>
+                                <img src="img/herois-destaque/nana_transparent__graveyard_party.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-furacaozinho.jpg" alt="">
-                            <h3>Furaçãozinho</h3>
-                            <img src="img/herois-destaque/Starlight_Skin_Tag.png" class="skin-tag-icon" alt="">
-                            <p>Membro Estrela 2022/07</p>
+                        <div class="item-galeria" id="nana-furacaozinho">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-furacaozinho.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Furaçãozinho</h3>
+                                <img src="img/herois-destaque/Starlight_Skin_Tag.png" class="skin-tag-icon" alt="">
+                                <p>Membro Estrela 2022/07</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="furacaozinhoExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-furacaozinho">&times;</span>
+                                <img src="img/herois-destaque/nana_starlight_skin_png_transparan.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
 
                         <!-- Skin Nana -->
-                        <div class="item-galeria">
-                            <img src="img/herois-destaque/nana-mestre-das-nevoas.jpg" alt="">
-                            <h3>Mestre das Névoas</h3>
-                            <img src="" class="skin-tag-icon" alt="">
-                            <p>Evento por tempo limitado</p>
+                        <div class="item-galeria" id="nana-nevoas">
+                            <div class="item-galeria-imagem">
+                                <div class="item-galeria-imagem-hover">
+                                    <img src="img/herois-destaque/nana-mestre-das-nevoas.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-galeria-info">
+                                <h3>Mestre das Névoas</h3>
+                                <img src="" class="skin-tag-icon" alt="">
+                                <p>Evento por tempo limitado</p>
+                            </div>
+                        </div>
+                        <div class="custom-alert" id="nevoasExpand">
+                            <div class="alert-content">
+                                <span class="close-btn" id="close-nevoas">&times;</span>
+                                <img src="img/herois-destaque/mistbenders_aldous_n_nana_mlbb.png" alt="">
+                                <p>Você odeia a Nana?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="galeria-hero-emojis">
+                    <h2>Emojis da Nana</h2>
                     <div class="galeria-content">
-                        
+
                         <div class="item-galeria">
                             <img src="img/herois-destaque/double-fofura.png" alt="">
                             <h3>Double Fofura</h3>
@@ -176,15 +340,15 @@
                         </div>
 
                         <div class="item-galeria">
-                        <img src="img/herois-destaque/o-mod-protege-voce.png" alt="">
-                        <h3>O Mod protege você!</h3>
-                        <p>Concedido aos moderadores seniores da MLBB</p>
+                            <img src="img/herois-destaque/o-mod-protege-voce.png" alt="">
+                            <h3>O Mod protege você!</h3>
+                            <p>Concedido aos moderadores seniores da MLBB</p>
                         </div>
 
                         <div class="item-galeria">
-                        <img src="img/herois-destaque/piscadinha-da-naninha.png" alt="">
-                        <h3>Piscadinha da Naninha</h3>
-                        <p>Emote de batalha - Especial Starlight 2022/07</p>                            
+                            <img src="img/herois-destaque/piscadinha-da-naninha.png" alt="">
+                            <h3>Piscadinha da Naninha</h3>
+                            <p>Emote de batalha - Especial Starlight 2022/07</p>
                         </div>
 
                     </div>
@@ -193,154 +357,764 @@
             <div class="text-hero">
                 <div class="text-buttons-actions">
                     <div class="content-buttons-actions">
-                        <div class="button-action active" id="button1">História</div>
+                        <div class="button-action active" id="button1">Atributos</div>
                         <div class="button-action" id="button2">Skills</div>
                         <div class="button-action" id="button3">Equipamentos</div>
-                        <div class="button-action" id="button4">Title 4</div>
+                        <div class="button-action" id="button4">História</div>
                     </div>
                 </div>
                 <div class="text-content-actions" id="">
                     <div class="sub-content active" id="content1">
-                        <h2>História</h2>
-                        <p>
-                            Depois da Guerra Sem Fim, a Terra do Amanhecer estava coberta de cicatrizes, mas a Floresta Enluarada< /span>Deusa da Lua. Além dos elfos, havia várias outras criaturas estranhas vivendo nesta densa floresta com um porte desenfreado. Houve muito poucas disputas. ainda estava banhada pela luz da Azrya de
-                        </p>
-                        <p>   
-                            Os Leoninos eram a raça mais peculiar desta floresta. Eles eram poucos, mas nasceram com uma aparência fofa, comportamento ágil e algum talento para usar o poder espiritual. Eles usaram seu poder espiritual para assar tortas de maçã, pescar e pular na floresta… Enquanto os Leoninos estavam acordados, a Floresta Enluarada ficava especialmente animada.
-                        </p>
-                        <p>    
-                            Nana era a Leonina [mais safada] entre eles. Ela nasceu em uma noite de luar com grandes poderes espirituais. Nana era naturalmente entusiasmada e enérgica e gostava de usar seu próprio poder para ajudar seus amigos na selva. É uma pena que ela, sendo imprudente e imprudente, tenha reduzido a cinzas as tortas de maçã de outras pessoas ou arrancado os arbustos de frutas silvestres. Aos poucos, todos começaram a se distanciar de Nana.
-                        </p> 
-                        <p>    
-                            Felizmente, havia um pequeno Tanuki chamado Molina que estava sempre ao lado de Nana. Molina era um pequeno Tanuki que vivia nos limites da Floresta Enluarada. Ela não tinha pai, nem mãe, nem amigos. Ela morava sozinha desde que se lembrava. Devido a um acidente, Molina invadiu o local de encontro dos Leoninos, ficou preso em uma caverna perigosa e foi Nana quem a salvou. Desde então, Molina sempre gostou de incomodar Nana. Mas Nana não gostava de ficar com Molina o dia todo. Ela sentia que Molina, que só tinha capacidade de mudar, era muito fraco e como Nana sempre gosta de criar problemas, achava que Molina nem sempre deveria estar ao seu lado.
-                        </p>
-                        <p>   
-                            Nana preferia brincar com seus companheiros leoninos.
-                            
-                            Embora se sentisse decepcionada com a rejeição de todos, Nana, que era naturalmente otimista, logo tentaria ajudar a todos. Certa vez, os indolentes leoninos tiveram uma rara reunião e discutiram sobre a construção de um playground que pertenceria à raça leonina. Para os leoninos, este foi um evento raro e sério, e Nana também participou dele com entusiasmo.
-                        </p>
-                        <p>  
-                            Depois de meses de trabalho árduo, com o esforço de todos os Leoninos, eles usaram pedras do luar doadas pelos elfos, longos troncos doados pela floresta, tinta de estuque colorida misturada uniformemente com suco de frutas vermelhas e outros tesouros doados pelos espíritos da natureza para construir o requintado Meow Playground. Tinha uma estrutura para escalar gatos, um lago para pescar, uma sala de sobremesas, um grande trampolim... tudo. No dia da sua construção, para comemorar, os Leoninos trouxeram um vinho de fruta velho e empoeirado, assaram centenas de tartes de maçã e robalo grelhados e beberam no jardim do Meow Playground.
-                        </p> 
-                        <p>  
-                            Nana gostou mais desse tipo de evento. Ela pulou feliz, pegando o vinho de frutas e bebendo. Ela bebeu tão feliz. Quando o luar chegou, a bêbada Nana pulou no palco. Ela queria usar seu poder espiritual para fazer mais torta de maçã para todos comemorarem. Mas quando ela começou a lançar seu feitiço, o poder em suas mãos começou a perder o controle, e um furacão começou, deixando o Meow Playground em tal desordem que perdeu completamente sua aparência original.
-                        </p>
-                        <p>    
-                            Vendo que todos os esforços da raça foram arruinados por seu próprio erro, Nana sentiu-se culpada e assustada. Antes que todos acordassem, ela deixou silenciosamente seus companheiros Leoninos sem levar nada com ela, querendo encontrar uma maneira de controlar seu poder para poder voltar e ajudar todos a construir um paraíso mais divertido.
-                        </p> 
-                        <p>   
-                            Nana caminhou todo o caminho para o oeste, seu caminho cheio de criaturas estranhas. Ela tentou conversar com algumas criaturinhas, mas todos a ignoraram, fazendo com que Nana se sentisse extremamente deprimida. Nana, que nunca havia saído da Floresta Enluarada, sentiu uma sensação de perda e solidão sem precedentes, até descobrir que Molina a seguia secretamente desde o início.
-                        </p> 
-                        <p>  
-                            Molina entendeu a culpa de Nana e como ela devia estar se sentindo. Ela disse a Nana: Na parte sul de Azrya – o Pântano das Sombras perto da Terra do Desespero , existe uma espécie de fruta mística que cresce em locais perigosos e que pode ajudar o usuário a controlar sua própria energia.
-                        </p>
-                        <p>  
-                            Nana ficou um pouco surpresa ao ver que o pequeno Tanuki ainda a seguia e ficou um pouco emocionada. Mas Nana ainda recusou o pedido de Molina para ir com ela ao Pântano das Sombras. Ela estava preocupada que houvesse alguns perigos no caminho que machucariam sua amiguinha. Nana fingiu assustar Molina duramente: “Você é tão fraco e pequeno. Não me siga.”
-                        </p>
-                        <p>   
-                            Mas logo depois que ela partiu, Molina a alcançou e se recusou teimosamente a sair.
-                            
-                            Nana descobriu pela primeira vez que o fraco e pequeno Tanuki também era persistente. Ela estava feliz por dentro, mas por fora ela aceitou a companhia de Molina com relutância.
-                        </p>
-                        <p>    
-                            Os dois passaram por vários obstáculos e finalmente chegaram ao Pântano das Sombras. Nas profundezas da caverna, eles encontraram a fruta mágica que procuravam. Nana felizmente foi buscar a fruta, mas não percebeu o perigo que se aproximava gradualmente. Perto da Terra do Desespero, viviam muitos monstros corroídos pelo Abismo, a natureza pura de Nana fazia essa criatura negra e feia lamber os beiços e abrir a boca de aparência feroz.
-                        </p>
-                        <p>  
-                            Molina ao seu lado percebeu o perigo. Vendo que sua boa amiga Nana estava prestes a colher a fruta, ela gritou e usou o poder de transformação que só funcionava de vez em quando - Molina se tornou a imagem de Nana e ficou na frente da indefesa Nana.
-                            
-                            “Por mais fraco que eu seja, ainda posso proteger meu amigo.”
-                        </p> 
-                        <p>    
-                            Nana, que havia pegado a fruta, ficou chocada com tudo o que aconteceu na sua frente. Com a ajuda da fruta, Nana enviou uma força poderosa para repelir o monstro, mas Molina também estava morrendo. Nana chorou e compartilhou seu poder espiritual com Molina, mas não adiantou. Finalmente, Molina agarrou a mão de Nana e compartilhou seu poder de transformação com Nana, esperando que ela ficasse com sua única amiga para sempre.
-                        </p>
-                        <p>   
-                            “Fique feliz, fique feliz para sempre.”
-                            
-                            Descobriu-se que o controle do aprendizado foi apenas o começo de seu crescimento. Nana continuou na estrada com a bênção e a confiança de Molina.
-                            
-                            Quem nunca esqueceu sempre sobreviverá de outra forma; aqueles que nunca esqueceram sua cidade natal sempre retornarão para ela.
-                        </p>
+                        <div class="attributes-hero">
+                            <div class="attributes-hero-title">
+                                <h3>Atributos</h3>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Classe</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>Mago <span> <title>Emblema de Mago</title><img src="img/mage-logo.png" alt=""> </span> </h3>
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Rota</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>Meio <span> <img src="img/mid-png.png" alt=""> </span> </h3> 
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Especialidade</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>Controle de Grupo</h3>
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Recurso de Habilidade</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>Mana</h3>
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Tipo de Dano</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>Mágico</h3>
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Tipo de ataque</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3>À distância</h3>
+                                </div>
+                            </div>
+                            <div class="attribute-single">
+                                <div class="attribute-single-title">
+                                    <h3>Preço</h3>
+                                </div>
+                                <div class="attribute-single-res">
+                                    <h3><img src="img/herois-destaque/battle-points.png" alt=""> 6.500 ou <img
+                                            src="img/herois-destaque/diamond.png" alt=""> 299</h3>
+                                </div>
+                            </div>
+
+                            <div class="attributes-hero-tables">
+                                <table class="attributes-table">
+                                    <tr>
+                                        <th>HP</th>
+                                        <td>2501</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Regeneração de HP</th>
+                                        <td>6.8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ataque Físico</th>
+                                        <td>115</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Defesa Física</th>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Velocidade de Ataque</th>
+                                        <td>1.08</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Taxa da Vel. de Ataque</th>
+                                        <td>100%</td>
+                                    </tr>
+
+                                </table>
+                                <table class="attributes-table">
+                                    <tr>
+                                        <th>Mana</th>
+                                        <td>510</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Regeneração de Mana</th>
+                                        <td>3.6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Poder Mágico</th>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Defesa Mágica</th>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Velocidade de Movimento</th>
+                                        <td>250</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
                     </div>
                     <div class="sub-content" id="content2">
+                        <!-- Botões das Skills -->
                         <div class="buttons-skills">
                             <!-- Botão Passiva -->
-                            <div class="button-skill">
+                            <div class="button-skill" id="passiva">
                                 <img src="img/herois-destaque/bencao-da-molina.png" alt="">
-                                <h3>Bênção da Molina</h3>                                
+                                <h3>Bênção da Molina</h3>
                             </div>
                             <!-- Botão Habilidade 1 -->
-                            <div class="button-skill">
+                            <div class="button-skill" id="bumerangue">
                                 <img src="img/herois-destaque/bumerangue-magico.png" alt="">
                                 <h3>Bumerangue Mágico</h3>
                             </div>
                             <!-- Botão Habilidade 2 -->
-                            <div class="button-skill">
+                            <div class="button-skill" id="molina">
                                 <img src="img/herois-destaque/abraco-da-molina.png" alt="">
                                 <h3>Abraço da Molina</h3>
                             </div>
                             <!-- Botão Ultimate -->
-                            <div class="button-skill">
+                            <div class="button-skill" id="ultimate">
                                 <img src="img/herois-destaque/blitz-molina.png" alt="">
                                 <h3>Blitz Molina</h3>
                             </div>
                         </div>
+                        <!-- Descrição das Skills -->
                         <div class="contents-skills">
                             <!-- Descrição da Passiva -->
-                            <div class="content-skill">
-                                <h3>Bênção da Molina</h3>
-                                <p>Ao sofrer dano fatal, Nana remove todos os debuffs dela e transforma, tornando-se inatingível e invencível, e ganha 70% Velocidade de movimento por 2 segundos. Ela também recupera 10% do HP máximo ao longo da duração.
+                            <div class="content-skill active" id="passiva-content">
+                                <h3>
+                                    Bênção da Molina
+                                    <span class="imune" <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">IaE</font>
+                                        </font>
+                                    </span>
+                                </h3>
+                                <div class="container-video-skill">
+                                    <div class="video-skill-content">
+                                        <video id="bumerangueVideo" class="video-skill" width="320" height="240" muted loop>
+                                            <source src="videos/nana-passiva.mp4" type="video/mp4">
+                                            Seu navegador não suporta o elemento de vídeo.
+                                        </video>
+                                    </div>
+                                </div>
+                                <p>Ao sofrer dano fatal, Nana remove todos os debuffs dela e transforma, tornando-se
+                                    inatingível e invencível, e ganha 70% Velocidade de movimento por 2 segundos. Ela
+                                    também recupera 10% do HP máximo ao longo da duração.
                                 </p>
                                 <p>
-                                Nana só pode se transformar uma vez a cada 150 segundos e não pode lançar habilidades na forma transformada.
+                                    Nana só pode se transformar uma vez a cada 150 segundos e não pode lançar
+                                    habilidades na forma transformada.
                                 </p>
+                                
                             </div>
                             <!-- Descrição da Habilidade 1-->
-                            <div class="content-skill">
-                                <h3>Bênção da Molina</h3>
-                                <p>Ao sofrer dano fatal, Nana remove todos os debuffs dela e transforma, tornando-se inatingível e invencível, e ganha 70% Velocidade de movimento por 2 segundos. Ela também recupera 10% do HP máximo ao longo da duração.
+                            <div class="content-skill" id="bumerangue-content">
+                                <h3>
+                                    Bumerange Mágico
+                                    <span class="dea" <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">DeA</font>
+                                        </font>
+                                    </span>
+
+                                </h3>
+                                <div class="container-video-skill">
+                                    <div class="video-skill-content">
+                                        <video id="bumerangueVideo" class="video-skill" width="320" height="240" muted loop>
+                                            <source src="videos/nana-boomerang.mp4" type="video/mp4">
+                                            Seu navegador não suporta o elemento de vídeo.
+                                        </video>
+                                    </div>
+                                </div>
+                                      
+                                <p>Nana lança seu Bumerangue Mágico na direção designada, causando dano aos inimigos
+                                    atingidos na ida e volta do bumerangue. O bumerangue causa 320 de dano mágico
+                                    <span>(+100% de Poder Mágico Total)</span> ao primeiro inimigo atingido. Para cada
+                                    inimigo atingido adicional, o dano é reduzido em 20% (redução máxima de 60%).
                                 </p>
                                 <p>
-                                Nana só pode se transformar uma vez a cada 150 segundos e não pode lançar habilidades na forma transformada.
+                                    Taxa de Vampirismo: 50%
                                 </p>
+                                <table class="skills-table">
+                                    <tr>
+                                        <th></th>
+                                        <td>Nv.1</td>
+                                        <td>Nv.2</td>
+                                        <td>Nv.3</td>
+                                        <td>Nv.4</td>
+                                        <td>Nv.5</td>
+                                        <td>Nv.6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tempo de Recarga</th>
+                                        <td>5.5</td>
+                                        <td>5.2</td>
+                                        <td>4.9</td>
+                                        <td>4.6</td>
+                                        <td>4.3</td>
+                                        <td>4.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Custo de Mana</th>
+                                        <td>50</td>
+                                        <td>55</td>
+                                        <td>60</td>
+                                        <td>65</td>
+                                        <td>70</td>
+                                        <td>75</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dano Base</th>
+                                        <td>320</td>
+                                        <td>344</td>
+                                        <td>368</td>
+                                        <td>392</td>
+                                        <td>416</td>
+                                        <td>440</td>
+                                    </tr>
+
+                                </table>
                             </div>
                             <!-- Descrição da Habilidade 2-->
-                            <div class="content-skill">
-                                <h3>Bênção da Molina</h3>
-                                <p>Ao sofrer dano fatal, Nana remove todos os debuffs dela e transforma, tornando-se inatingível e invencível, e ganha 70% Velocidade de movimento por 2 segundos. Ela também recupera 10% do HP máximo ao longo da duração.
+                            <div class="content-skill" id="molina-content">
+                                <h3>
+                                    Abraço da Molina
+                                    <span class="cg">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">CG</font>
+                                        </font>
+                                    </span>
+
+                                    <span class="debuff">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Debuff</font>
+                                        </font>
+                                    </span>
+                                </h3>
+                                <div class="container-video-skill">
+                                    <div class="video-skill-content">
+                                        <video id="bumerangueVideo" class="video-skill" width="320" height="240" muted loop>
+                                            <source src="videos/nana-abraco-molina.mp4" type="video/mp4">
+                                            Seu navegador não suporta o elemento de vídeo.
+                                        </video>
+                                    </div>
+                                </div>
+                                <p>
+                                    Nana lança a Molina no local alvo, causando 250 de dano mágico <span>(+50% de Poder
+                                        Mágico Total)</span> aos inimigos dentro do alcance e Transformando os heróis
+                                    inimigos atingidos em pequenos animais (Chinchilas Super Fofas).
                                 </p>
                                 <p>
-                                Nana só pode se transformar uma vez a cada 150 segundos e não pode lançar habilidades na forma transformada.
+                                    Se Molina não atingir um herói inimigo, ela permanecerá no chão e perseguirá o herói
+                                    inimigo mais próximo que estiver ao alcance, (Transformando) o primeiro inimigo
+                                    herói que ela toca.
                                 </p>
+                                <p>
+                                    Transformação: Reduz a velocidade de movimento do alvo em 30% e a defesa mágica em
+                                    25% por 1,5s. Heróis transformados não podem atacar ou usar habilidades.
+                                </p>
+                                <table class="skills-table">
+                                    <tr>
+                                        <th></th>
+                                        <td>Nv.1</td>
+                                        <td>Nv.2</td>
+                                        <td>Nv.3</td>
+                                        <td>Nv.4</td>
+                                        <td>Nv.5</td>
+                                        <td>Nv.6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tempo de Recarga</th>
+                                        <td>14.5</td>
+                                        <td>14.0</td>
+                                        <td>13.5</td>
+                                        <td>13.0</td>
+                                        <td>12.5</td>
+                                        <td>12.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Custo de Mana</th>
+                                        <td>80</td>
+                                        <td>85</td>
+                                        <td>90</td>
+                                        <td>95</td>
+                                        <td>100</td>
+                                        <td>105</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dano Base</th>
+                                        <td>250</td>
+                                        <td>275</td>
+                                        <td>230</td>
+                                        <td>325</td>
+                                        <td>350</td>
+                                        <td>375</td>
+                                    </tr>
+
+                                </table>
                             </div>
                             <!-- Descrição da Ultimate -->
-                            <div class="content-skill">
-                                <h3>Bênção da Molina</h3>
-                                <p>Ao sofrer dano fatal, Nana remove todos os debuffs dela e transforma, tornando-se inatingível e invencível, e ganha 70% Velocidade de movimento por 2 segundos. Ela também recupera 10% do HP máximo ao longo da duração.
+                            <div class="content-skill" id="ultimate-content">
+                                <h3>
+                                    Blitz Molina
+                                    <span class="explosao">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Explosão</font>
+                                        </font>
+                                    </span>
+
+                                    <span class="cg">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">CG</font>
+                                        </font>
+                                    </span>
+                                </h3>
+                                <div class="container-video-skill">
+                                    <div class="video-skill-content">
+                                        <video id="bumerangueVideo" class="video-skill" width="320" height="240" muted loop>
+                                            <source src="videos/nana-utt.mp4" type="video/mp4">
+                                            Seu navegador não suporta o elemento de vídeo.
+                                        </video>
+                                    </div>
+                                </div>
+                                <p>Nana invoca Molina para atacar a área alvo 3 vezes, cada vez causando 440 de dano
+                                    mágico <span>(+160% de Poder Mágico Total)</span> aos inimigos dentro do alcance e
+                                    reduzindo-os em 50% por 1s.
                                 </p>
                                 <p>
-                                Nana só pode se transformar uma vez a cada 150 segundos e não pode lançar habilidades na forma transformada.
+                                    Se os inimigos forem atingidos consecutivamente, eles ficarão atordoados por 1
+                                    segundo.
+                                </p>
+                                <p>
+                                    Taxa de Vampirismo: 50%
+                                </p>
+                                <table class="skills-table">
+                                    <tr>
+                                        <th></th>
+                                        <td>Nv.1</td>
+                                        <td>Nv.2</td>
+                                        <td>Nv.3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tempo de Recarga</th>
+                                        <td>36.0</td>
+                                        <td>32.0</td>
+                                        <td>28.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Custo de Mana</th>
+                                        <td>135</td>
+                                        <td>150</td>
+                                        <td>165</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dano Base</th>
+                                        <td>440</td>
+                                        <td>550</td>
+                                        <td>660</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Dicas para usar a Nana -->
+                        <div class="dica-skills">
+                            <div class="dica-skills-content">
+                            </div>
+                            <!-- Introdução as Dicas  -->
+                            <div class="dica-skills-into">
+                                <h3>Dicas para usar a Nana</h3>
+                                <p>
+                                    Aqui, você pode conferir algumas dicas sugeridas por nós para utilizar a heroína Nana, incluindo equipamentos, feitiços, combos e priorizações.
                                 </p>
                             </div>
+                            <!-- Ataque Básico  -->
+                            <div class="dica-ataque-basico">
+                                <h3>
+                                    Ataque Básico
+                                </h3>
+                                <div class="container-video-skill">
+                                    <div class="video-skill-content">
+                                        <video id="bumerangueVideo" class="video-skill" width="320" height="240" muted loop>
+                                            <source src="videos/nana-atk-basico-pqueno.mp4" type="video/mp4">
+                                            Seu navegador não suporta o elemento de vídeo.
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="attributes-hero-tables">
+                                    <table class="attributes-table">
+                                        <tr>
+                                            <th>Ataque Básico</th>
+                                            <td>115</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Velocidade de Ataque</th>
+                                            <td>1.08</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Taxa da Vel. de Ataque</th>
+                                            <td>100%</td>
+                                        </tr>
+    
+                                    </table>
+                                </div>
+                                <p>
+                                    Nana não ganha velocidade de ataque, pois sua ênfase está na atribuição de itens mágicos e habilidades, priorizando o dano explosivo.
+                                </p>
+                                
+                            </div>
+
+                            <!-- Prioricações de skills e feitiços  -->
+                            <div class="dica-feiticos-priorizacoes">
+                                <h3>Feitiços e Priorizações de Skills</h3>
+                                <div class="dica-skills-imagem">
+                                    <!-- Skill Uptade -->
+                                    <div class="button-skill">
+                                        <h3>Principal</h3>
+                                        <img src="img/herois-destaque/abraco-da-molina.png" alt="">
+                                    </div>
+                                    <!-- Skill Uptade -->
+                                    <div class="button-skill">
+                                        <h3>Secundário</h3>
+                                        <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                    </div>
+                                    <!-- Feitiços de Batalha -->
+                                    <div class="feiticos-skills">
+                                        <h3>Feitiços de Batalha</h3>
+                                        <div class="feiticos-skills-content">
+                                            <img src="img/herois-destaque/flesh-feitico.png" alt="">
+                                            <img src="img/herois-destaque/flameshot-feitico.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Texto argumentativo  -->
+                            <div class="dica-skills-description">
+                                <p>
+                                    Priorize a skill “2” para maximizar, lembrando que sempre que estiver disponível
+                                    escolha a ultimate. Sugerimos a skill "2" pelo fato de Nana transformar seus
+                                    inimigos em chinchilas, pois se você precisará escapar se for pego de alguma
+                                    forma conseguirá tempo para fugir, já que você não não tenho exatamente
+                                    habilidade para correr.
+                                </p>
+                            </div>
+                        
+                            <!-- Combos da Nana-->
+                            <div class="dica-skills-combo">
+                                <div class="dica-skills-combo-title">
+                                    <h3>Combos</h3>
+                                </div>
+                                <div class="dica-skills-combo-content">
+                                    <p>
+                                        Os combos feitos com a Nana são bem simples, a única objeção é: seja rápido ao combar, a ultimate pode ser cancelada se você morrer antes de completar a animação, então fique atendo! 
+                                    </p>
+                                    <p>
+                                        No início você pode usando o bumerangue <span><img src="img/herois-destaque/bumerangue-magico.png" alt="Skill 1 Nana (Bumerangue)"></span> para pokear o inimigo, junto com ataque básico e a Molina <span><img src="img/herois-destaque/abraco-da-molina.png" alt="Skill 2 Nana (Abraço da Molina)"></span>.
+                                    </p>
+
+                                    <p>
+                                        Assim que conseguir sua ultimate você pode fazer o combo completo com a Skill 2 + Skill 1 + Ultimate + Flameshot:
+
+                                        <span><img src="img/herois-destaque/abraco-da-molina.png" alt="Skill 1 Nana (Abraço da Molina)"></span>
+                                        <span><img src="img/herois-destaque/bumerangue-magico.png" alt="Skill 2 Nana (Bumerangue)"></span>
+                                        <span><img src="img/herois-destaque/blitz-molina.png" alt="Ultimate Nana (Blitz da Molina)"></span>
+                                        <span><img src="img/herois-destaque/flameshot-feitico.png" alt="Flameshot"></span>
+                                    </p>
+                                    <p>
+                                        Ou Skill 2 + Ultimate + Skill 1 + Flameshot:
+
+                                        <span><img src="img/herois-destaque/abraco-da-molina.png" alt="Skill 1 Nana (Abraço da Molina)"></span>
+                                        <span><img src="img/herois-destaque/blitz-molina.png" alt="Ultimate Nana (Blitz da Molina)"></span>
+                                        <span><img src="img/herois-destaque/bumerangue-magico.png" alt="Skill 2 Nana (Bumerangue)"></span>
+                                        <span><img src="img/herois-destaque/flameshot-feitico.png" alt="Flameshot"></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Legenda -->
+                            <div class="dica-legenda">
+                                <div class="dica-legenda-title">
+                                    <h4>Legenda para siglas</h4>
+                                </div>
+                                <div class="dica-legenda-content">
+                                    <p>
+                                        Imune à Eliminação: 
+                                        <span class="imune" <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">IaE</font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="dica-legenda-content">
+                                    <p>
+                                        Dano em Área: 
+                                        <span class="dea" <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">DeA</font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="dica-legenda-content">
+                                    <p>
+                                        Controle de Grupo: 
+                                        <span class="cg">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">CG</font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="dica-legenda-content">
+                                    <p>
+                                        Diminui Atributos dos Inimigos: 
+                                        <span class="debuff">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Debuff</font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="dica-legenda-content">
+                                    <p>
+                                        Dano Instantâneo: 
+                                        <span class="explosao">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Explosão</font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="sub-content" id="content3">
-                        <div class="equipamento">
-                            <h3>Titulo</h3>
-                            <img src="img/herois-destaque/equipamento 0.jpg" alt="">
-                            <h3>Titulo</h3>
-                            <img src="img/herois-destaque/equipamento 1.jpg" alt="">
-                            <h3>Titulo</h3>
-                            <img src="img/herois-destaque/equipamento 2.jpg" alt="">
+                        <div class="equipamento-prontos">
+                            <div class="equipamento-title">
+                                <h3>
+                                    Builds e Emblemas para Nana
+                                </h3>
+                            </div>
+                            <div class="equipamento-prontos-img">
+                                <h3>Sugestão 1</h3>
+                                <img src="img/herois-destaque/equipamento 0.jpg" alt="">
+                                <h3>Sugestão 2</h3>
+                                <img src="img/herois-destaque/equipamento 1.jpg" alt="">
+                                <h3>Sugestão 3</h3>
+                                <img src="img/herois-destaque/equipamento 2.jpg" alt="">
+                            </div>
+                            <p>
+                                Vale ressaltar que a build depende do inimigo enfrentado, porém existem itens que combinam melhor com certos heróis, como é o caso do Cetro Relâmpago na Nana ou do Cajado Genial.
+                            </p>
+    
+                            <p>
+                                Os emblemas são bastante diversos e também podem ser levados em consideração o inimigo enfrentado ou o jogador que controla o personagem em si. No caso da Nana, por exemplo, eu, particularmente, gosto de usar o emblema mágico, a habilidade de penetração adaptativa e a habilidade de cura/reação. A escolha da segunda habilidade varia às vezes com base no inimigo, considerando a velocidade de movimento quando o adversário tem muitas habilidades de deslocamento ou escape. Ou, por exemplo, a opção por desconto na loja de itens, quando o mago inimigo não precisa de muitos itens para crescer.
+    
+                            </p>
                         </div>
+
+                        <!-- Dicas para usar a Nana -->
+                        <div class="dica-skills">
+                            <div class="dica-skills-content">
+                                <h3>Feitiços e Prioricações de Skills</h3>
+                                <div class="dica-skills-imagem">
+                                    <!-- Skill Uptade -->
+                                    <div class="button-skill">
+                                        <h3>Principal</h3>
+                                        <img src="img/herois-destaque/abraco-da-molina.png" alt="">
+                                    </div>
+                                    <!-- Skill Uptade -->
+                                    <div class="button-skill">
+                                        <h3>Secundário</h3>
+                                        <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                    </div>
+                                    <!-- Feitiços de Batalha -->
+                                    <div class="feiticos-skills">
+                                        <h3>Feitiços de Batalha</h3>
+                                        <div class="feiticos-skills-content">
+                                            <img src="img/herois-destaque/flesh-feitico.png" alt="">
+                                            <img src="img/herois-destaque/flameshot-feitico.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Texto argumentativo  -->
+                                <div class="dica-skills-description">
+                                    <p>
+                                        Priorize a skill “2” para maximizar, lembrando que sempre que estiver disponível
+                                        escolha a ultimate. Sugerimos a skill "2" pelo fato de Nana transformar seus
+                                        inimigos em chinchilas, pois se você precisará escapar se for pego de alguma
+                                        forma conseguirá tempo para fugir, já que você não não tenho exatamente
+                                        habilidade para correr.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="sub-content" id="content4">Content 4
-                        <img src="img/herois-destaque/nana-furacaozinho.jpg" alt="">
+                    <div class="sub-content" id="content4">
+                        <div>
+                            <h2>História</h2>
+                            <p>
+                                Depois da Guerra Sem Fim, a Terra do Amanhecer estava coberta de cicatrizes, mas a
+                                Floresta Enluarada Deusa da Lua. Além dos elfos, havia várias outras criaturas
+                                    estranhas vivendo nesta densa floresta com um porte desenfreado. Houve muito poucas
+                                    disputas. ainda estava banhada pela luz da Azrya de
+                            </p>
+                            <p>
+                                Os Leoninos eram a raça mais peculiar desta floresta. Eles eram poucos, mas nasceram com
+                                uma aparência fofa, comportamento ágil e algum talento para usar o poder espiritual.
+                                Eles usaram seu poder espiritual para assar tortas de maçã, pescar e pular na floresta…
+                                Enquanto os Leoninos estavam acordados, a Floresta Enluarada ficava especialmente
+                                animada.
+                            </p>
+                            <p>
+                                Nana era a Leonina [mais safada] entre eles. Ela nasceu em uma noite de luar com grandes
+                                poderes espirituais. Nana era naturalmente entusiasmada e enérgica e gostava de usar seu
+                                próprio poder para ajudar seus amigos na selva. É uma pena que ela, sendo imprudente e
+                                imprudente, tenha reduzido a cinzas as tortas de maçã de outras pessoas ou arrancado os
+                                arbustos de frutas silvestres. Aos poucos, todos começaram a se distanciar de Nana.
+                            </p>
+                            <p>
+                                Felizmente, havia um pequeno Tanuki chamado Molina que estava sempre ao lado de Nana.
+                                Molina era um pequeno Tanuki que vivia nos limites da Floresta Enluarada. Ela não tinha
+                                pai, nem mãe, nem amigos. Ela morava sozinha desde que se lembrava. Devido a um
+                                acidente, Molina invadiu o local de encontro dos Leoninos, ficou preso em uma caverna
+                                perigosa e foi Nana quem a salvou. Desde então, Molina sempre gostou de incomodar Nana.
+                                Mas Nana não gostava de ficar com Molina o dia todo. Ela sentia que Molina, que só tinha
+                                capacidade de mudar, era muito fraco e como Nana sempre gosta de criar problemas, achava
+                                que Molina nem sempre deveria estar ao seu lado.
+                            </p>
+                            <p>
+                                Nana preferia brincar com seus companheiros leoninos.
+
+                                Embora se sentisse decepcionada com a rejeição de todos, Nana, que era naturalmente
+                                otimista, logo tentaria ajudar a todos. Certa vez, os indolentes leoninos tiveram uma
+                                rara reunião e discutiram sobre a construção de um playground que pertenceria à raça
+                                leonina. Para os leoninos, este foi um evento raro e sério, e Nana também participou
+                                dele com entusiasmo.
+                            </p>
+                            <p>
+                                Depois de meses de trabalho árduo, com o esforço de todos os Leoninos, eles usaram
+                                pedras do luar doadas pelos elfos, longos troncos doados pela floresta, tinta de estuque
+                                colorida misturada uniformemente com suco de frutas vermelhas e outros tesouros doados
+                                pelos espíritos da natureza para construir o requintado Meow Playground. Tinha uma
+                                estrutura para escalar gatos, um lago para pescar, uma sala de sobremesas, um grande
+                                trampolim... tudo. No dia da sua construção, para comemorar, os Leoninos trouxeram um
+                                vinho de fruta velho e empoeirado, assaram centenas de tartes de maçã e robalo grelhados
+                                e beberam no jardim do Meow Playground.
+                            </p>
+                            <p>
+                                Nana gostou mais desse tipo de evento. Ela pulou feliz, pegando o vinho de frutas e
+                                bebendo. Ela bebeu tão feliz. Quando o luar chegou, a bêbada Nana pulou no palco. Ela
+                                queria usar seu poder espiritual para fazer mais torta de maçã para todos comemorarem.
+                                Mas quando ela começou a lançar seu feitiço, o poder em suas mãos começou a perder o
+                                controle, e um furacão começou, deixando o Meow Playground em tal desordem que perdeu
+                                completamente sua aparência original.
+                            </p>
+                            <p>
+                                Vendo que todos os esforços da raça foram arruinados por seu próprio erro, Nana
+                                sentiu-se culpada e assustada. Antes que todos acordassem, ela deixou silenciosamente
+                                seus companheiros Leoninos sem levar nada com ela, querendo encontrar uma maneira de
+                                controlar seu poder para poder voltar e ajudar todos a construir um paraíso mais
+                                divertido.
+                            </p>
+                            <p>
+                                Nana caminhou todo o caminho para o oeste, seu caminho cheio de criaturas estranhas. Ela
+                                tentou conversar com algumas criaturinhas, mas todos a ignoraram, fazendo com que Nana
+                                se sentisse extremamente deprimida. Nana, que nunca havia saído da Floresta Enluarada,
+                                sentiu uma sensação de perda e solidão sem precedentes, até descobrir que Molina a
+                                seguia secretamente desde o início.
+                            </p>
+                            <p>
+                                Molina entendeu a culpa de Nana e como ela devia estar se sentindo. Ela disse a Nana: Na
+                                parte sul de Azrya – o Pântano das Sombras perto da Terra do Desespero , existe uma
+                                espécie de fruta mística que cresce em locais perigosos e que pode ajudar o usuário a
+                                controlar sua própria energia.
+                            </p>
+                            <p>
+                                Nana ficou um pouco surpresa ao ver que o pequeno Tanuki ainda a seguia e ficou um pouco
+                                emocionada. Mas Nana ainda recusou o pedido de Molina para ir com ela ao Pântano das
+                                Sombras. Ela estava preocupada que houvesse alguns perigos no caminho que machucariam
+                                sua amiguinha. Nana fingiu assustar Molina duramente: “Você é tão fraco e pequeno. Não
+                                me siga.”
+                            </p>
+                            <p>
+                                Mas logo depois que ela partiu, Molina a alcançou e se recusou teimosamente a sair.
+
+                                Nana descobriu pela primeira vez que o fraco e pequeno Tanuki também era persistente.
+                                Ela estava feliz por dentro, mas por fora ela aceitou a companhia de Molina com
+                                relutância.
+                            </p>
+                            <p>
+                                Os dois passaram por vários obstáculos e finalmente chegaram ao Pântano das Sombras. Nas
+                                profundezas da caverna, eles encontraram a fruta mágica que procuravam. Nana felizmente
+                                foi buscar a fruta, mas não percebeu o perigo que se aproximava gradualmente. Perto da
+                                Terra do Desespero, viviam muitos monstros corroídos pelo Abismo, a natureza pura de
+                                Nana fazia essa criatura negra e feia lamber os beiços e abrir a boca de aparência
+                                feroz.
+                            </p>
+                            <p>
+                                Molina ao seu lado percebeu o perigo. Vendo que sua boa amiga Nana estava prestes a
+                                colher a fruta, ela gritou e usou o poder de transformação que só funcionava de vez em
+                                quando - Molina se tornou a imagem de Nana e ficou na frente da indefesa Nana.
+
+                                “Por mais fraco que eu seja, ainda posso proteger meu amigo.”
+                            </p>
+                            <p>
+                                Nana, que havia pegado a fruta, ficou chocada com tudo o que aconteceu na sua frente.
+                                Com a ajuda da fruta, Nana enviou uma força poderosa para repelir o monstro, mas Molina
+                                também estava morrendo. Nana chorou e compartilhou seu poder espiritual com Molina, mas
+                                não adiantou. Finalmente, Molina agarrou a mão de Nana e compartilhou seu poder de
+                                transformação com Nana, esperando que ela ficasse com sua única amiga para sempre.
+                            </p>
+                            <p>
+                                “Fique feliz, fique feliz para sempre.”
+
+                                Descobriu-se que o controle do aprendizado foi apenas o começo de seu crescimento. Nana
+                                continuou na estrada com a bênção e a confiança de Molina.
+
+                                Quem nunca esqueceu sempre sobreviverá de outra forma; aqueles que nunca esqueceram sua
+                                cidade natal sempre retornarão para ela.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <!--Contro, Panel-->
@@ -349,9 +1123,10 @@
         <div class="control-content container">
             <div class="control-text">
                 <h2 class="control-title">
-                Configurações Recomendadas por Mim
+                    Configurações Recomendadas por Mim
                 </h2>
-                <p>Essas são as configurações que eu utilizo para jogar; considero básicas e de ótimo auxílio na jogatina.</p>
+                <p>Essas são as configurações que eu utilizo para jogar; considero básicas e de ótimo auxílio na
+                    jogatina.</p>
                 <div class="control-spec">
                     <div class="spec-box">
                         <i class='bx bxs-check-circle'></i>
@@ -364,11 +1139,11 @@
                     <div class="spec-box">
                         <i class='bx bxs-check-circle'></i>
                         <span>"Modo de Herói Fixado"</span>
-                     </div>
+                    </div>
                     <div class="spec-box">
                         <i class='bx bxs-check-circle'></i>
                         <span>"Mira Inteligente de Habilidade e Ataque Básico"</span>
-                     </div>
+                    </div>
                 </div>
             </div>
             <!--Controle Imagem-->
@@ -386,15 +1161,23 @@
                             <img src="img/config-2.jpg" alt="" class="control-img">
                         </div>
                     </div>
-                   
-                  </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-pagination"></div>
+
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+        </div>
     </section>
+
+    <!-- Botão Voltar Topo -->
+    <div class="footer-iconTop" title="Voltar ao topo">
+        <a href="#tutorial"><img src="img/herois-destaque/pata-nana.png" alt=""></a>
+    </div>
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
 
     <!--Footer-->
     <div class="footer container">
@@ -408,7 +1191,7 @@
             </div>
         </div>
         <div class="footer-box">
-            <h2 class="footer-title">Serviços de  Coach</h2>
+            <h2 class="footer-title">Serviços de Coach</h2>
             <a href="#">Time Profissional</a>
             <a href="#">Mundial</a>
             <a href="#">LATAM</a>
@@ -433,9 +1216,12 @@
     <div class="copyright container">
         <p>&#169; 2022-2023 BangasNaBrazza </p>
         <div class="payments">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>  
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt=""
+                    class="image-lane-box"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt=""
+                    class="image-lane-box"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt=""
+                    class="image-lane-box"></a>
         </div>
     </div>
 
@@ -445,4 +1231,5 @@
     <script src="js/main.js"></script>
     <script src="js/tutorial.js"></script>
 </body>
+
 </html>

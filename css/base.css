@@ -348,6 +348,61 @@ li.dropdown {
     gap: 2.5rem;
 }
 
+/*Contatos*/
+
+.contact {
+    display: none;
+    margin: 5rem 10rem 0 10rem;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box  input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second--bg-color);
+    border-radius: .8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box  input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Accordion  */
+
 .accordion-text {
     flex: 1 1 17rem;
 }

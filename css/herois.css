@@ -365,6 +365,11 @@
     flex-direction: column;
     margin-top: 5rem;
 }
+
+.hero-tutorial a {
+    text-decoration: none;
+    color: black;
+}
   
 .hero-tutorial-background {
     display: flex;

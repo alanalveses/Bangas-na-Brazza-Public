@@ -284,6 +284,12 @@ function verificaSelecao() {
       const suporte1 = [2, 1, 2, 1];
   
       const imagemRota = document.getElementById('imagemRota');
+      document.getElementById('rota-selva').classList.add('no-opacity');
+      document.getElementById('rota-meio').classList.add('no-opacity');
+      document.getElementById('rota-ouro').classList.add('no-opacity');
+      document.getElementById('rota-experiencia').classList.add('no-opacity');
+      document.getElementById('rota-tank').classList.add('no-opacity');
+      document.getElementById('rota-suporte').classList.add('no-opacity');
   
       if (
         valores.toString() === assassino.toString() || 
