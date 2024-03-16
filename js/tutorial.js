@@ -1,6 +1,4 @@
 // Mudar atributos, skill, equipamento e história
-
-
 document.addEventListener('DOMContentLoaded', function() {
     var buttons = document.querySelectorAll('.button-action');
   

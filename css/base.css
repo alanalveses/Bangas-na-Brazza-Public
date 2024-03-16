@@ -153,6 +153,16 @@ header.shadow {
     background: var(--main-color);
 }
 
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: var(--main-color);
+}
+
 /* .nav-link:hover::after {
     width: 100%;
     transition: 0.4s all linear;
@@ -191,6 +201,88 @@ li.dropdown {
     color: var(--text-color);
     display: block;
 }
+
+/* Navegação att */
+
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  ul li a:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  ul li a:hover {
+    background-color: black;
+    color: #fff;
+  }
+  ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  ul li a.active {
+    background-color: black;
+    color: #fff;
+  }
+  
+  ul li a.active:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+  ul li a.active:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
 
 /*Botão de Login*/
 .login-btn {
@@ -254,6 +346,22 @@ li.dropdown {
 .drop-login.drop-login-open{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: 0.4s all linear;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background: var(--main-color);
+    padding: 10px 16px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: var(--hover-color);
+    transition: 0.3s all linear;
 }
 
 /*Menu*/
@@ -346,59 +454,6 @@ li.dropdown {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
-}
-
-/*Contatos*/
-
-.contact {
-    display: none;
-    margin: 5rem 10rem 0 10rem;
-}
-
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact p {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.contact form {
-    max-width: 50rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box  input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second--bg-color);
-    border-radius: .8rem;
-    margin: 0.7rem 0;
-}
-
-.contact form .input-box  input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
 }
 
 /* Accordion  */
@@ -622,19 +677,62 @@ li.dropdown {
 }
 
 
+/*Icone para subir para home*/
+
+.footer-iconTop {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 3;
+  }
+  
+  .footer-iconTop a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: 1s ease;
+    cursor: pointer;
+  }
+  
+  .footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+    opacity: 0.9;
+  }
+  
+  .footer-iconTop a img {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--second--bg-color);
+  }
+  
+  .footer-iconTop a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--second--bg-color);
+    transform: rotate(90deg);
+    font-size: 2.4rem;
+  }
+
 /* BREAKPOINTS */ 
 
 
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        
     }
-}
-
-@media (max-width: 991px) {
     .container {
         margin: 1rem;
     }
+    
+}
+
+@media (max-width: 991px) {
 
     .footer {
         padding: 2rem 3%;
@@ -642,6 +740,7 @@ li.dropdown {
 }
 
 @media (max-width: 768px) {
+    
 
     .footer {
         margin-left: 2rem;
@@ -651,6 +750,7 @@ li.dropdown {
 }
 
 @media (max-width: 617px) {
+   
     .footer {
         display: flex;
         flex-wrap: wrap;
@@ -670,6 +770,7 @@ li.dropdown {
 }
 
 @media (max-width: 450px) {
+    
     html {
         font-size: 50%;
     }
@@ -702,7 +803,7 @@ li.dropdown {
 }
 
 @media (max-width: 365px) {
-
+   
     .footer {
         flex-direction: column-reverse;
     }

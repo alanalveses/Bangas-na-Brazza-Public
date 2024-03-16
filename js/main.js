@@ -1,3 +1,19 @@
+//Nav Active
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-link");
+  
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        console.log("Link clicado");
+        navLinks.forEach(function(navLink) {
+          navLink.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
+    });
+  });
+
+  
 //Drop Login 
 let loginBtn = document.querySelector('.login-btn')
 let dropLogin = document.querySelector('.drop-login')
@@ -85,3 +101,18 @@ var swiper = new Swiper(".control-images", {
 });
 
 
+//Botão para ir ao topo 
+
+window.addEventListener("scroll", function() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

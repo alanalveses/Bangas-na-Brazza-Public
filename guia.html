@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia - Bangas na Brazza</title>
+    <title>Guia - Lud Legends</title>
     <!--Link do css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
@@ -24,14 +24,18 @@
         <div class="nav">
             <!--Logo-->
             <a href="index.html" class="logo">
-                <span>Bangas</span>Na <span>Brazza</span>
+                <span>Lud</span> Legends
             </a>
             <!--Links naveg-->
             <div class="navbar">
-                <li><a href="index.html" class="nav-link">Heróis</a></li>
-                <li><a href="guia.html" class="nav-link">Guia</a></li>
-                <li><a href="novo.html" class="nav-link">Atualização</a></li>
-                <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Heróis</a></li>
+                    <li><a  class="nav-link active">Guia</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="novo.html" class="nav-link">Atualização</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+
+                </ul>
                 <!--Login Btn-->
                 <div class="login-btn">
                     <span>Login</span>
@@ -39,11 +43,11 @@
                     <!--|Drop box-->
                     <div class="drop-login">
                         <div class="drop-item">
-                            <a href="#">Area Do Cliente</a>
+                            <a href="account.html">Area Do Cliente</a>
                             <span>Perfil & Chat </span>
                         </div>
                         <div class="drop-item">
-                            <a href="#">Reportar Problema</a>
+                            <a href="duvida.html">Reportar Problema</a>
                             <span>Suporte & Dúvidas</span>
                         </div>
                     </div>
@@ -57,6 +61,7 @@
             </div>
         </div>
     </header>
+    
 
     <!--Guia - Home-->
     <section class="guia-slide" id="guia">
@@ -753,7 +758,7 @@
     <!--Footer-->
     <div class="footer container">
         <div class="footer-box">
-            <a href="index.html" class="footer-logo">BangasNa<span>Brazza</span></a>
+            <a href="index.html" class="footer-logo">Lud<span>Legends</span></a>
             <div class="social">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -784,13 +789,20 @@
     </div>
     <!--Copyright-->
     <div class="copyright container">
-        <p>&#169; 2022-2023 BangasNaBrazza </p>
+        <p>&#169; 2022-2024 Lud Legends</p>
         <div class="payments">
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>  
         </div>
     </div>
+
+    
+    <!-- Botão Voltar Topo -->
+    <div class="footer-iconTop" id="scrollToTopBtn"  title="Voltar ao topo">
+        <a><i class='bx bx-arrow-back'></i></a>
+    </div>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

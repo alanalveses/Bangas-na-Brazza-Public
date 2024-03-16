@@ -2,6 +2,43 @@
 
 }
 
+.button-event {
+    background: #ccc;
+    border-radius: 0.5rem;
+    border: 1px solid #a8a5a5;
+    padding: 2px 8px;
+    position: relative;
+}
+
+/* .button-event::after .events-tab.active-tab{
+    content: url(../img/icon-mas.png);
+    position: absolute;
+    top: -30px; /* Ajusta a distância do topo conforme necessário 
+    right: 0; /* Ajusta a distância da direita conforme necessário 
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    margin-right: 25px;
+} */
+
+.button-event.active-tab {
+    /* Adicione suas propriedades específicas aqui */
+    transition: all 1s;
+    padding: 6px 12px;
+}
+
+.button-event.active-tab::after {
+    content: url(../img/icon-mas.png);
+    position: absolute;
+    top: -30px; /* Ajusta a distância do topo conforme necessário */
+    right: 0; /* Ajusta a distância da direita conforme necessário */
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    margin-right: 25px;
+}
+
+
 .events-tabs {
     display: flex;
     justify-content: center;
@@ -10,15 +47,25 @@
 }
 
 .events-tab {
-    color: crimson;
     font-size: 35px;
     cursor: pointer;
 }
 
 .events-tab.active-tab {
-    color: blue;
+    color: red;
+}
+
+.button-event .events-tab.active-tab {
+    transition: all 1s;
+    padding: 4px 10px;
 }
 
 .events-tab-content:not(.active-tab) {
     display: none;
 }
+
+.margin-event {
+    margin-bottom: 4rem;
+}
+
+

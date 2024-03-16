@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos - Bangas na Brazza</title>
+    <title>Eventos - Lud Legends</title>
     <!--Link do css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
@@ -24,22 +24,18 @@
         <div class="nav">
             <!--Logo-->
             <a href="index.html" class="logo">
-                <span>Bangas</span>Na <span>Brazza</span>
+                <span>Lud</span> Legends
             </a>
             <!--Links navegação-->
             <div class="navbar">
-                <li><a href="index.html" class="nav-link">Heróis</a></li>
-                <li><a href="guia.html" class="nav-link">Guia</a></li>
-                <li><a href="novo.html" class="nav-link">Atualizção</a></li>
-                <li class="dropdown">
-                    <a href="eventos.html" class="nav-link drop-btn">Eventos</a>
-                    <div class="dropdown-content">
-                        <a href="#news" class="nav-link">Notícias</a>
-                        <a href="#news" class="nav-link">Notícias</a>
-                        <a href="#news" class="nav-link">Notícias</a>
-                        <a href="#news" class="nav-link">Notícias</a>
-                    </div>
-                </li>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Heróis</a></li>
+                    <li><a href="guia.html" class="nav-link">Guia</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="novo.html" class="nav-link">Atualização</a></li>
+                    <li><a  class="nav-link active">Eventos</a></li>
+                    
+                </ul>
                 <!--Login Btn-->
                 <div class="login-btn">
                     <span>Login</span>
@@ -47,11 +43,11 @@
                     <!--|Drop box-->
                     <div class="drop-login">
                         <div class="drop-item">
-                            <a href="#">Area Do Cliente</a>
+                            <a href="account.html">Area Do Cliente</a>
                             <span>Perfil & Chat </span>
                         </div>
                         <div class="drop-item">
-                            <a href="#faq">Reportar Problema</a>
+                            <a href="duvida.html">Reportar Problema</a>
                             <span>Suporte & Dúvidas</span>
                         </div>
                     </div>
@@ -105,49 +101,46 @@
     <section class="events container">
         <!-- Botões dos eventos -->
         <div class="events-tabs">
-            <span class="events-tab" data-target="#sazonal">
-                Eventos Sazonais
-            </span>
-            <span class="events-tab active-tab" data-target="#iniciantes">
-                Eventos para Iniciantes
-            </span>
-            <span class="events-tab" data-target="#lojas">
-              Eventos de Loja
-            </span>
+            <div class="button-event">
+                <span class="events-tab active-tab" data-target="#sazonal">
+                    Eventos Sazonais
+                </span>
+            </div>
+            <div class="button-event">
+                <span class="events-tab " data-target="#iniciantes">
+                    Eventos para Iniciantes
+                </span>
+            </div>
         </div>
 
         <!-- Conteúdo do Eventos -->
         <div class="events-tabs-content">
 
             <!-- Conteúdo dos Eventos Sazonais -->
-            <div class="events-tab-content " content id="sazonal">
+            <div class="events-tab-content active-tab" content id="sazonal">
                 <div class="evento-inicial">
-                    <!--Eventos Iniciais-->
+                    <!--Eventos Sazonais-->
                     <h2 class="heading">Eventos para Sazionais</h2>
-                    <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
+                    <p class="text-center">O MLBB disponibiliza eventos todos os meses para seus jogadores, com eles você consegue ganhar skins grátis e emojis.</p>
 
                     <br><br>
-                    <p class="text-center">Veja na aba de eventos do jogo.</p>
+                    <p class="text-center margin-event">Neste momento os eventos disponíveis são:</p>
                     <div class="img-events container">
-                        <img src="img/Teste-Heroico.jpg" alt="">
-                        <img src="img/Teste-Heroico-Regras.jpg" alt="">
-                        <img src="img/Login-de-9-Dias.jpg" alt="">
-                        <img src="img/Login-de-9-Dias-Regras.jpg" alt="">
-                        <img src="img/Crescimento-de-Nivel.jpg" alt="">
-                        <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
+                        <img src="img/telas/skin-collector.jpg" alt="">
+                        <img src="img/telas/evento-kof.jpg" alt="">
                     </div>
                 </div>              
             </div>
 
             <!-- Conteúdo dos Eventos para Iniciantes -->
-            <div class="events-tab-content active-tab" content id="iniciantes">
+            <div class="events-tab-content" content id="iniciantes">
                 <div class="evento-inicial">
                     <!--Eventos Iniciais-->
                     <h2 class="heading">Eventos para Iniciantes</h2>
                     <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
 
                     <br><br>
-                    <p class="text-center">Veja na aba de eventos do jogo.</p>
+                    <p class="text-center margin-event">Veja na aba de eventos do jogo.</p>
                     <div class="img-events container">
                         <img src="img/Teste-Heroico.jpg" alt="">
                         <img src="img/Teste-Heroico-Regras.jpg" alt="">
@@ -157,26 +150,6 @@
                         <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
                     </div>
                 </div>
-            </div>
-
-            <!-- Conteúdo dos Eventos de Loja -->
-            <div class="events-tab-content " content id="lojas">
-                <div class="evento-inicial">
-                    <!--Eventos Iniciais-->
-                    <h2 class="heading">Eventos para Loja</h2>
-                    <p class="text-center">Para iniciar bem a sua diversão o MLBB disponibiliza eventos onde os iniciantes <br> podem garantir emoji, heróis e skins de graça basta cumprir algumas regras bem simples.</p>
-
-                    <br><br>
-                    <p class="text-center">Veja na aba de eventos do jogo.</p>
-                    <div class="img-events container">
-                        <img src="img/Teste-Heroico.jpg" alt="">
-                        <img src="img/Teste-Heroico-Regras.jpg" alt="">
-                        <img src="img/Login-de-9-Dias.jpg" alt="">
-                        <img src="img/Login-de-9-Dias-Regras.jpg" alt="">
-                        <img src="img/Crescimento-de-Nivel.jpg" alt="">
-                        <img src="img/Crescimento-de-Nivel-Regras.jpg" alt="">
-                    </div>
-                </div>              
             </div>
 
         </div>
@@ -240,7 +213,7 @@
     <!--Footer-->
     <div class="footer container">
         <div class="footer-box">
-            <a href="index.html" class="footer-logo">BangasNa<span>Brazza</span></a>
+            <a href="index.html" class="footer-logo">Lud<span>Legends</span></a>
             <div class="social">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -272,7 +245,7 @@
 
     <!--Copyright-->
     <div class="copyright container">
-        <p>&#169; 2022-2023 BangasNaBrazza </p>
+        <p>&#169; 2022-2024 Lud Legends </p>
         <div class="payments">
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mlbb-logo.png" alt="" class="image-lane-box"></a>
@@ -280,10 +253,17 @@
         </div>
     </div>
 
+    
+    <!-- Botão Voltar Topo -->
+    <div class="footer-iconTop" id="scrollToTopBtn"  title="Voltar ao topo">
+        <a><i class='bx bx-arrow-back'></i></a>
+    </div>
+
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--Link js-->
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/eventos.js"></script>
 </body>
 </html>
