@@ -22,13 +22,23 @@ loginBtn.onclick = () => {
     dropLogin.classList.toggle('drop-login-open')
 }
 
+
 //Menu Open Close
 let menu = document.querySelector('.menu-icon')
-//let navbar = document.querySelector('.navbar')
+let navbar = document.querySelector('.navbar')
 
 menu.onclick = () => {
-    menu.classList.toggle('move');
+    menu.classList.toggle("move");
+    navbar.classList.toggle("open-menu");
 }
+
+//Scroll remove menu 
+window.onscroll = () => {
+  menu.classList.remove("move");
+  navbar.classList.remove("open-menu");
+  dropLogin.classList.remove('drop-login-open')
+}
+
 
 //Header Background Change
 let header = document.querySelector('header');

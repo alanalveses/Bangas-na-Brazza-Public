@@ -134,6 +134,7 @@ header.shadow {
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
+    
 }
 
 .nav-link {
@@ -211,9 +212,11 @@ ul {
     left: 60%;
     transform: translate(-50%, -50%);
     display: flex;
+    
   }
   ul li {
     list-style: none;
+    margin-left: 1rem;
   }
   
   ul li a {
@@ -224,7 +227,7 @@ ul {
     padding: 10px 20px;
     text-decoration: none;
     color: #262626;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     transition: 0.5s;
     z-index: 1;
@@ -294,8 +297,9 @@ ul {
     background: var(--main-color);
     color: var(--text-color);
     font-weight: 500;
-    padding: 8px 15px;
+    padding: 0px 18px;
     cursor: pointer;
+    max-height: 12vh;
 }
 
 .login-btn .bx {
@@ -312,7 +316,7 @@ ul {
 
 .drop-login {
     position: absolute;
-    top: 115%;
+    top: 105%;
     right: 0;
     width: 231px;
     height: auto;
@@ -404,6 +408,13 @@ ul {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 750px) {
+    
+    .heading {
+        font-size: 1.5rem;
+    }
 }
 
 .heading::after {
@@ -724,33 +735,120 @@ ul {
 
 @media (max-width: 1200px) {
     html {
-        
+
     }
     .container {
         margin: 1rem;
     }
+
+    .login-btn {
+        max-height: 14vh;
+    }
     
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1050px) {
+    .container {
+        margin: 0 auto;
+        width: 92%;
+    }
+    
+}
+
+@media (max-width: 952px) {
+    .nav{
+    }
+
+    section {
+        padding: 3rem 0 2rem !important;
+    }
+
+    .home-slide {
+        min-height: 560px;
+    }
 
     .footer {
         padding: 2rem 3%;
     }
+    .navbar ul {
+        top: 50%;
+        left: 55%;
+    }
+}
+
+@media (max-width: 855px) {
+    .navbar ul {
+        top: 50%;
+        left: 58%;
+    }
+
+    .navbar ul li {
+        margin-left: 0.4rem;
+      }
+      
+
 }
 
 @media (max-width: 768px) {
-    
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--container-color);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .navbar ul li a {
+        margin: 10px !important;
+    }
+
+    .navbar ul .login-btn {
+        position: fixed;
+        left: -47%;
+        top: -30%;
+        background: var(--body-alter-color);
+        color: var(--text-color);
+        font-weight: 500;
+        padding: 0px 18px;
+        cursor: pointer;
+        height: 8vh;
+    }
+
+    .navbar.open-menu {
+        right: 0%;
+        transition: 0.5s;
+    }
+
+
 
     .footer {
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
 
 }
 
 @media (max-width: 617px) {
    
+    
     .footer {
         display: flex;
         flex-wrap: wrap;
@@ -759,20 +857,33 @@ ul {
     
     .footer-box {
         flex: 1 1 40%;
-        margin-left: 3.5rem;
+        margin-left: .5rem;
         margin-bottom: 2rem;
+    }
+
+    .footer-iconTop a img {
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: 2rem;
+    }
+    .footer-iconTop a i {
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: 2rem;
     }
     
 }
 
 @media (max-width: 550px) {
     
+    
 }
 
 @media (max-width: 450px) {
+
     
-    html {
-        font-size: 50%;
+    .card-header h2 {
+        font-size: 1.5rem !important;
     }
 
     .toggle {

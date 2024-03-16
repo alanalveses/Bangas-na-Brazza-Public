@@ -6,7 +6,7 @@
     background: #ccc;
     border-radius: 0.5rem;
     border: 1px solid #a8a5a5;
-    padding: 2px 8px;
+    padding: 0.125rem 0.5rem;
     position: relative;
 }
 
@@ -22,16 +22,15 @@
 } */
 
 .button-event.active-tab {
-    /* Adicione suas propriedades específicas aqui */
     transition: all 1s;
-    padding: 6px 12px;
+    padding: 0.3rem 0.6rem;
 }
 
 .button-event.active-tab::after {
     content: url(../img/icon-mas.png);
     position: absolute;
-    top: -30px; /* Ajusta a distância do topo conforme necessário */
-    right: 0; /* Ajusta a distância da direita conforme necessário */
+    top: -30px; 
+    right: 0; 
     display: inline-block;
     width: 1px;
     height: 1px;
@@ -47,7 +46,7 @@
 }
 
 .events-tab {
-    font-size: 35px;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -57,7 +56,7 @@
 
 .button-event .events-tab.active-tab {
     transition: all 1s;
-    padding: 4px 10px;
+    padding: 0.25rem 0.7rem;
 }
 
 .events-tab-content:not(.active-tab) {
@@ -69,3 +68,9 @@
 }
 
 
+@media (max-width: 550px) {
+    .events-tab {
+        font-size: 0.75rem;
+    }
+    
+}

@@ -448,3 +448,26 @@ align-items: center;
     border: 0;
     cursor: pointer;
 }
+
+
+@media (max-width: 750px) {
+    .home-slide {
+        min-height: 500px;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+    .slide-title {
+        font-size: 1.7rem;
+    }
+    .slide-description,
+    .ser-box p, .faq-text p,
+    .contrl-text p {
+        font-size: 0.875rem;
+    }
+    .faq-accordion{
+        flex-direction: column-reverse;
+    }
+
+}
