@@ -936,6 +936,12 @@ th {
 }
 
 @media (max-width: 450px) {
+  
+  .button-action {
+    font-size: 0.8rem;
+    padding: 4px 2px;
+  }
+
   .hero-tutorial-background {
     height: 16.25rem;
   }
@@ -963,13 +969,7 @@ th {
 
 @media (max-width: 390px) {
 
-  .button-action {
-    font-size: 0.8rem;
-    padding: 4px 2px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-  }
+  
 
   .hero-tutorial-background {
     height: 12.25rem;
