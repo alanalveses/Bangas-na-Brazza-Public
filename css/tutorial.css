@@ -510,6 +510,10 @@ content-buttons-actions {
   justify-content: center;
 }
 
+.dica-feiticos-priorizacoes h3 {
+  text-align: center;
+}
+
 .dica-skills-imagem {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -671,6 +675,9 @@ th {
   color: #D1B161;
 }
 
+.skills-table {
+  margin: 2rem 0;
+}
 
 /* Alert dialog */
 
@@ -778,6 +785,7 @@ th {
     left: 80%;
   }
 
+  th,
   td {
     padding: 0.2rem;
   }
@@ -936,7 +944,7 @@ th {
 }
 
 @media (max-width: 450px) {
-  
+
   .button-action {
     font-size: 0.8rem;
     padding: 4px 2px;
@@ -965,11 +973,38 @@ th {
     display: flex;
     flex-direction: column;
   }
+
+  .button-skill h3 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .skills-table th,
+  td {
+    font-size: 0.6rem;
+  }
+
+  .skills-primaria-secundaria h3 {
+    font-size: 0.8rem;
+  }
+
+  .feiticos-skills h3 {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 390px) {
+  .grafico-info {
+    width: 9rem;
+    top: 64%;
+    left: 77%;
+  }
 
-  
+  .bar p {
+    font-size: 0.6rem;
+  }
 
   .hero-tutorial-background {
     height: 12.25rem;
@@ -992,4 +1027,32 @@ th {
     height: 4rem;
     margin-top: 0.5rem;
   }
+  .button-skill h3 {
+    font-size: 0.5rem; }
+}
+
+@media (max-width: 300px) {
+
+  .button-action {
+    font-size: 0.5rem;
+    padding: 2px 1px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+  }
+  
+  .skills-table th,
+  td {
+    font-size: 0.4rem;
+    padding: 0.2rem;
+  }
+
+  .feiticos-skills h3 {
+    font-size: 1rem;
+  }
+  
+
+
 }
