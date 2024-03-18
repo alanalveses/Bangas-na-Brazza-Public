@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizações - Lud Legends</title>
     <!--Link do css-->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/novo.css">
     <!--Link Boxicons-->
@@ -28,30 +27,32 @@
             </a>
             <!--Links navegação-->
             <div class="navbar">
-                <ul>
+                <ul class="ul-navbar">
 
                     <li><a href="index.html" class="nav-link">Heróis</a></li>
                     <li><a href="guia.html" class="nav-link">Guia</a></li>
                     <li><a href="loja.html" class="nav-link">Loja</a></li>
                     <li><a class="nav-link active">Atualização</a></li>
                     <li><a href="eventos.html" class="nav-link">Eventos</a></li>
-                </ul>
-                <!--Login Btn-->
-                <div class="login-btn">
-                    <span>Login</span>
-                    <i class='bx bx-chevron-down'></i>
-                    <!--|Drop box-->
-                    <div class="drop-login">
-                        <div class="drop-item">
-                            <a href="account.html">Area Do Cliente</a>
-                            <span>Perfil & Chat </span>
-                        </div>
-                        <div class="drop-item">
-                            <a href="duvida.html">Reportar Problema</a>
-                            <span>Suporte & Dúvidas</span>
+                    <!--Login Btn-->
+                    <div class="div-li">
+                        <div class="login-btn">
+                            <span>Login</span>
+                            <i class='bx bx-chevron-down'></i>
+                            <!--|Drop box-->
+                            <div class="drop-login">
+                                <div class="drop-item">
+                                    <a href="account.html">Area Do Cliente</a>
+                                    <span>Perfil & Chat </span>
+                                </div>
+                                <div class="drop-item">
+                                    <a href="duvida.html">Reportar Problema</a>
+                                    <span>Suporte & Dúvidas</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </ul>
             </div>
             <!--Menu Icon-->
             <div class="menu-icon">
@@ -145,9 +146,9 @@
     </section>
 
     <!--Last Hero Revamp-->
-    <section class="faq container" id="faq">
-        <div class="faq-text text-center">
-            <h3 class="heading">Moskov <br> A lança da Quiescência</h3>
+    <section class="revamp-hero container" id="revamp-hero">
+        <div class="revamp-hero-text text-center">
+           
             <p class="text-justify text-indent">A "Lança da Quiescência" do Moskov estará de volta após uma renovação em
                 07/11!
             </p>
@@ -162,7 +163,8 @@
             </p>
 
         </div>
-        <div class="faq-img text-center">
+        <div class="revamp-hero-img text-center">
+            <h3 class="heading">Moskov <br> A lança da Quiescência</h3>
             <img src="img/herois-png/moskov-removebg.png" alt="Moskov Revamp">
             <a href="#moskov-renovado" class="btn">Conferir</a>
         </div>
@@ -248,24 +250,33 @@
 
     <!--Last Patch Note-->
     <section class="patchnote container" id="patchnote">
+        <h2 class="heading">
+            Atualizações de Jogo
+        </h2>
+        <p>Você pode conferir os últimos patchs disponíveis no jogo.</p>
+        <p>
+            Usamos as seguintes indicações <span class="buff">BUFF&nbsp;↑</span> Fortalecimento,
+            <span class="nerf">NERF&nbsp;↓</span> Enfraquecimento e <span
+                class="ajust">ADJUSTE&nbsp;~</span> Ajuste para simplificar.
+        </p>
         <!-- Botões dos patchs -->
-        <div class="events-tabs">
-            <span class="events-tab" data-target="#patch830">
+        <div class="patch-tabs">
+            <span class="patch-tab" data-target="#patch830">
                 <h2 class="heading">Patch 1.8.30</h2>
             </span>
-            <span class="events-tab" data-target="#patch844">
+            <span class="patch-tab" data-target="#patch844">
                 <h2 class="heading">Patch 1.8.44</h2>
             </span>
-            <span class="events-tab active-tab" data-target="#patch847">
+            <span class="patch-tab active-tab" data-target="#patch847">
                 <h2 class="heading">Patch 1.8.47</h2>
             </span>
         </div>
 
         <!-- Conteúdo dos Patchs -->
-        <div class="events-tabs-content">
+        <div class="patch-tabs-content">
 
             <!-- Patchs 1.8.30 -->
-            <div class="events-tab-content " content id="patch830">
+            <div class="patch-tab-content " content id="patch830">
                 <div class="patch">
                     <div id="patch-hero">
                         <div class="patch-content">
@@ -1446,7 +1457,7 @@
             </div>
 
             <!-- Patch 1.8.44-->
-            <div class="events-tab-content " content id="patch844">
+            <div class="patch-tab-content " content id="patch844">
                 <div class="patch">
                     <div id="patch-hero">
                         <div class="patch-content">
@@ -1471,13 +1482,15 @@
                                 jogabilidade! Com isso nós esperamos trazer uma experiência de batalha ainda melhor.
                             </p>
                             <p>
-                                Os seguintes heróis foram ajustados nesta atualização: Vexana <span class="buff">BUFF&nbsp;↑</span>, Nana <span class="buff">BUFF&nbsp;↑</span>,
-                                Balmond <span class="buff">BUFF&nbsp;↑</span>, Vale <span class="buff">BUFF&nbsp;↑</span>, Barats <span class="buff">BUFF&nbsp;↑</span>, Alice <span class="buff">BUFF&nbsp;↑</span>, Lunox <span class="buff">BUFF&nbsp;↑</span>,
-                                Selena <span class="buff">BUFF&nbsp;↑</span> e Lancelot <span class="ajust">ADJUSTE&nbsp;~</span>.
+                                Os seguintes heróis foram ajustados nesta atualização: Vexana <span
+                                    class="buff">BUFF&nbsp;↑</span>, Nana <span class="buff">BUFF&nbsp;↑</span>,
+                                Balmond <span class="buff">BUFF&nbsp;↑</span>, Vale <span
+                                    class="buff">BUFF&nbsp;↑</span>, Barats <span class="buff">BUFF&nbsp;↑</span>, Alice
+                                <span class="buff">BUFF&nbsp;↑</span>, Lunox <span class="buff">BUFF&nbsp;↑</span>,
+                                Selena <span class="buff">BUFF&nbsp;↑</span> e Lancelot <span
+                                    class="ajust">ADJUSTE&nbsp;~</span>.
                             </p>
-                            <p>
-                                Usamos as seguintes indicações <span class="buff">BUFF&nbsp;↑</span> Fortalecimento, <span class="nerf">NERF&nbsp;↓</span> Enfraquecimento e <span class="ajust">ADJUSTE&nbsp;~</span> Ajuste para simplificar.
-                            </p>
+                            
                         </div>
 
                         <div class="balmond patch">
@@ -1493,11 +1506,16 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Novo Efeito: Varredura do Ciclone não pode mais ser interrompida por Controles de Grupo (Antes, Balmond poderia ser jogado para o ar durante a Varredura do Ciclone).
+                                        <li>Novo Efeito: Varredura do Ciclone não pode mais ser interrompida por
+                                            Controles de Grupo (Antes, Balmond poderia ser jogado para o ar durante a
+                                            Varredura do Ciclone).
                                         </li>
-                                        <li>Novo Efeito: Ganha 15% de Velocidade de Movimento Adicional, que diminui com o tempo, durante o uso da habilidade.
+                                        <li>Novo Efeito: Ganha 15% de Velocidade de Movimento Adicional, que diminui com
+                                            o tempo, durante o uso da habilidade.
                                         </li>
-                                        <li>Dano Base: 50-200 + 50% do Ataque Físico Total >> 25-100 + 25% do Ataque Físico Total, com a Velocidade de Ataque dobrada (O Dano Total permanece o mesmo).</li>
+                                        <li>Dano Base: 50-200 + 50% do Ataque Físico Total >> 25-100 + 25% do Ataque
+                                            Físico Total, com a Velocidade de Ataque dobrada (O Dano Total permanece o
+                                            mesmo).</li>
                                     </ul>
                                 </div>
 
@@ -1534,7 +1552,8 @@
                                     <ul>
                                         <li>Efeito de Lentidão: 50%-70% >> 30%,</li>
                                         <li>
-                                            Novo Efeito: Nana transforma todos os inimigos na área designada, caso não tenha ninguém no alcance, ela deixa um minion da Molina na área por 5s.
+                                            Novo Efeito: Nana transforma todos os inimigos na área designada, caso não
+                                            tenha ninguém no alcance, ela deixa um minion da Molina na área por 5s.
                                         </li>
                                     </ul>
                                 </div>
@@ -1570,7 +1589,8 @@
                                         <li>Aumentamos o alcance da habilidade.</li>
                                         <li>Aumentamos a velocidade da habilidade.
                                         </li>
-                                        <li>Ajuste em Efeitos: Inimigos atingidos serão empurrados levemente para trás; aumento considerável na velocidade de ativação da segunda explosão.</li>
+                                        <li>Ajuste em Efeitos: Inimigos atingidos serão empurrados levemente para trás;
+                                            aumento considerável na velocidade de ativação da segunda explosão.</li>
                                         <li>Tempo de Recarga: 11-8.5s >> 14-11s.</li>
                                     </ul>
                                 </div>
@@ -1604,7 +1624,9 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Vale ganha um acúmulo de Voz do Vento para cada eliminação ou assistência. Cada acúmulo concede 8 pontos de Velocidade de Movimento. Acumula até 10 vezes.</li>
+                                        <li>Vale ganha um acúmulo de Voz do Vento para cada eliminação ou assistência.
+                                            Cada acúmulo concede 8 pontos de Velocidade de Movimento. Acumula até 10
+                                            vezes.</li>
                                     </ul>
                                 </div>
 
@@ -1614,7 +1636,8 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Vale libera duas lâminas de vento pela esquerda e direita de uma área designada, causando Dano Mágico.</li>
+                                        <li>Vale libera duas lâminas de vento pela esquerda e direita de uma área
+                                            designada, causando Dano Mágico.</li>
                                     </ul>
                                 </div>
 
@@ -1624,7 +1647,9 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Vale invoca uma tempestade de vento na direção do alvo, causando dano aos inimigos atingidos e jogando-os para o ar. A tempestade de vento permanece no destino por um tempo, causando dano contínuo aos inimigos próximos.</li>
+                                        <li>Vale invoca uma tempestade de vento na direção do alvo, causando dano aos
+                                            inimigos atingidos e jogando-os para o ar. A tempestade de vento permanece
+                                            no destino por um tempo, causando dano contínuo aos inimigos próximos.</li>
                                     </ul>
                                 </div>
 
@@ -1634,7 +1659,10 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Vale invoca uma tempestade de vento na área designada, causando dano contínuo e puxando os inimigos na área para o centro. Após um tempo, a tempestade de vento explode, causando dano massivo. A tempestade de vento invocada pela 2ª habilidade também é puxada para o centro.</li>
+                                        <li>Vale invoca uma tempestade de vento na área designada, causando dano
+                                            contínuo e puxando os inimigos na área para o centro. Após um tempo, a
+                                            tempestade de vento explode, causando dano massivo. A tempestade de vento
+                                            invocada pela 2ª habilidade também é puxada para o centro.</li>
                                     </ul>
                                 </div>
 
@@ -1656,11 +1684,13 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Acúmulos: Cada inimigo atingido >> Cada vez que uma habilidade atinge um alvo (acertar vários alvos ainda concede apenas 1 acúmulo).</li>
+                                        <li>Acúmulos: Cada inimigo atingido >> Cada vez que uma habilidade atinge um
+                                            alvo (acertar vários alvos ainda concede apenas 1 acúmulo).</li>
                                         <li>Máximo de Acúmulos: 25 > 10.</li>
                                         <li>Número de Acúmulos Necessários para o Ataque Básico Aprimorado: 15 >> 10.
                                         </li>
-                                        <li>Novo Efeito: Ataque Básico Aprimorado também ajuda a manter o efeito da Passiva.</li>
+                                        <li>Novo Efeito: Ataque Básico Aprimorado também ajuda a manter o efeito da
+                                            Passiva.</li>
                                         <li>Aumento da Defesa por Acúmulo: 3-6>> 4-10.</li>
                                     </ul>
                                 </div>
@@ -1731,7 +1761,9 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Efeito Renovado: Restaura 1,5% da Mana Máxima a cada segundo (dobra ao lutar contra heróis inimigos). Cada nível aumenta a Velocidade de Movimento em 3 e a Cura Recebida em 1%.
+                                        <li>Efeito Renovado: Restaura 1,5% da Mana Máxima a cada segundo (dobra ao lutar
+                                            contra heróis inimigos). Cada nível aumenta a Velocidade de Movimento em 3 e
+                                            a Cura Recebida em 1%.
                                         </li>
                                     </ul>
                                 </div>
@@ -1759,7 +1791,8 @@
                                         </li>
                                         <li>Custo de Mana: 50-75 >> 100.
                                         </li>
-                                        <li>Dano: 270-395 + 90% de Poder Mágico >> (200-400) + 75% de Poder Mágico + ((3,5%-6%) + 0,3% do Máximo de Mana)% do HP Máximo do Inimigo.
+                                        <li>Dano: 270-395 + 90% de Poder Mágico >> (200-400) + 75% de Poder Mágico +
+                                            ((3,5%-6%) + 0,3% do Máximo de Mana)% do HP Máximo do Inimigo.
                                         </li>
                                     </ul>
                                 </div>
@@ -1770,10 +1803,13 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Novo Efeito: Reduz os Tempos de Recarga da 1ª e 2º Habilidade em 0,2s e 0,5s ao atingir 1 herói inimigo.</li>
-                                        <li>Dano Base: 90 + 20% de Poder Mágico >> (30-90) + (30%-50%) de Poder Mágico  (não escala mais com o aumento da Mana). </li>
+                                        <li>Novo Efeito: Reduz os Tempos de Recarga da 1ª e 2º Habilidade em 0,2s e 0,5s
+                                            ao atingir 1 herói inimigo.</li>
+                                        <li>Dano Base: 90 + 20% de Poder Mágico >> (30-90) + (30%-50%) de Poder Mágico
+                                            (não escala mais com o aumento da Mana). </li>
                                         <li>Custo de Mana: 50-160 >> 60-160.</li>
-                                        <li>Regeneração de HP: 60-100 + 10% de Poder Mágico >>40-100 + (30%-50%) de Poder Mágico.</li>
+                                        <li>Regeneração de HP: 60-100 + 10% de Poder Mágico >>40-100 + (30%-50%) de
+                                            Poder Mágico.</li>
                                     </ul>
                                 </div>
 
@@ -1797,9 +1833,11 @@
                                     <ul>
                                         <li>Energia alterada de 2 Ordem e Caos para 1 de cada.
                                         </li>
-                                        <li>Novo Efeito: As habilidades da Lunox agora podem se beneficiar dos bônus de Redução do Tempo de Recarga.
+                                        <li>Novo Efeito: As habilidades da Lunox agora podem se beneficiar dos bônus de
+                                            Redução do Tempo de Recarga.
                                         </li>
-                                        <li>Efeito Renovado: Com base na forma da Lunox, o Vampirismo e a Porcentagem de Penetração Mágica dela agora são convertidos entre si na proporção de 1:1.
+                                        <li>Efeito Renovado: Com base na forma da Lunox, o Vampirismo e a Porcentagem de
+                                            Penetração Mágica dela agora são convertidos entre si na proporção de 1:1.
                                         </li>
                                     </ul>
                                 </div>
@@ -1858,10 +1896,12 @@
 
                                     <ul>
                                         <li>Novo Efeito: Marcas agora podem ser aplicadas nos minions.</li>
-                                        <li>Os ajustes de dano para unidades que não são heróis são iguais aos dos heróis.</li>
+                                        <li>Os ajustes de dano para unidades que não são heróis são iguais aos dos
+                                            heróis.</li>
                                         <li>Aumentamos ligeiramente o raio da Explosão.
                                         </li>
-                                        <li>Corrigimos um problema em que o efeito de lentidão da primeira fase não correspondia com a descrição da habilidade.
+                                        <li>Corrigimos um problema em que o efeito de lentidão da primeira fase não
+                                            correspondia com a descrição da habilidade.
                                         </li>
 
                                     </ul>
@@ -1874,7 +1914,8 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Novo Efeito: Acertar um inimigo marcado agora atualiza o Tempo de Recarga da 2ª Habilidade (Abissal).
+                                        <li>Novo Efeito: Acertar um inimigo marcado agora atualiza o Tempo de Recarga da
+                                            2ª Habilidade (Abissal).
                                         </li>
                                         <li>Removemos o custo de Mana.</li>
                                     </ul>
@@ -1898,7 +1939,8 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Tempo de Recarga: 5,5-4s (não afetado pela Redução de TR) >> 5,5-4s (afetado pela Redução de TR).</li>
+                                        <li>Tempo de Recarga: 5,5-4s (não afetado pela Redução de TR) >> 5,5-4s (afetado
+                                            pela Redução de TR).</li>
                                     </ul>
                                 </div>
 
@@ -1918,7 +1960,9 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Após um curto período, Dyrroth lança um ataque destrutivo na direção designada (não pode ser interrompido), causando dano aos inimigos no caminho.
+                                        <li>Após um curto período, Dyrroth lança um ataque destrutivo na direção
+                                            designada (não pode ser interrompido), causando dano aos inimigos no
+                                            caminho.
                                         </li>
                                     </ul>
                                 </div>
@@ -2036,7 +2080,8 @@
 
                                     <ul>
                                         <li>Tempo de Recarga: 24s em todos os níveis >> 32s em todos os níveis.</li>
-                                        <li>Corrigimos um problema em que o dano da Ultimate dela não diminuía com o tempo em certas situações.</li>
+                                        <li>Corrigimos um problema em que o dano da Ultimate dela não diminuía com o
+                                            tempo em certas situações.</li>
                                     </ul>
                                 </div>
 
@@ -2075,7 +2120,8 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Dano: 400-625 + 100% do Dano Mágico Total >> 300-525 +125% do Dano Mágico Total.
+                                        <li>Dano: 400-625 + 100% do Dano Mágico Total >> 300-525 +125% do Dano Mágico
+                                            Total.
                                         </li>
                                     </ul>
                                 </div>
@@ -2107,7 +2153,8 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Corrigimos um problema em que os inimigos ainda ficavam lentos após saírem do alcance da Ultimate.</li>
+                                        <li>Corrigimos um problema em que os inimigos ainda ficavam lentos após saírem
+                                            do alcance da Ultimate.</li>
                                         <li>Efeito de Lentidão: 45%-65% >> 25%-45%.
                                         </li>
                                         <li>Tempo de Recarga: 40-30s >> 50-36s.</li>
@@ -2163,8 +2210,10 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Redução do Tempo de Recarga das habilidades 1 e 2 para cada Ataque Básico: 0,5s >0,8s.</li>
-                                        <li>Corrigimos um problema em que o intervalo de ataque era ligeiramente menor que o de outros heróis.</li>
+                                        <li>Redução do Tempo de Recarga das habilidades 1 e 2 para cada Ataque Básico:
+                                            0,5s >0,8s.</li>
+                                        <li>Corrigimos um problema em que o intervalo de ataque era ligeiramente menor
+                                            que o de outros heróis.</li>
                                     </ul>
                                 </div>
 
@@ -2197,7 +2246,10 @@
                                     <ul>
                                         <li>[Atributos] -> Ataque Físico: 40> 25.</li>
 
-                                        <li>[Passiva Única - Espírito de Luta](Renovada) -> Causar dano concede 12 de Ataque Físico adicional e 2% Vampirismo adicional por segundo por 4s, até 6 acúmulos. Causa Dano Real adicional igual a 10% do Dano Base quando com acúmuloscompletos.
+                                        <li>[Passiva Única - Espírito de Luta](Renovada) -> Causar dano concede 12 de
+                                            Ataque Físico adicional e 2% Vampirismo adicional por segundo por 4s, até 6
+                                            acúmulos. Causa Dano Real adicional igual a 10% do Dano Base quando com
+                                            acúmuloscompletos.
                                         </li>
                                     </ul>
                                 </div>
@@ -2210,7 +2262,10 @@
                                     <ul>
                                         <li>
                                             [Passiva Única - Força Bruta](Renovada)
-                                            -> Cada segundo após causar dano, ganha 6 de Ataque Físico e Poder Mágico adicionais e 2% de Velocidade de Movimento adicional por segundo por 4s, até 6 acúmulos. Ganha 15% de Redução de Controle e Lentidão adicionais quando estiver com acúmulos completos.
+                                            -> Cada segundo após causar dano, ganha 6 de Ataque Físico e Poder Mágico
+                                            adicionais e 2% de Velocidade de Movimento adicional por segundo por 4s, até
+                                            6 acúmulos. Ganha 15% de Redução de Controle e Lentidão adicionais quando
+                                            estiver com acúmulos completos.
                                         </li>
                                     </ul>
                                 </div>
@@ -2221,7 +2276,9 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Ganhe 25% de EXP e Ouro adicional com assistências. Eficaz durante toda a partida. >> Ganhe 45% de EXP e Ouro adicional com assistências. Efetivo apenas nos primeiros 8 minutos da partida.</li>
+                                        <li>Ganhe 25% de EXP e Ouro adicional com assistências. Eficaz durante toda a
+                                            partida. >> Ganhe 45% de EXP e Ouro adicional com assistências. Efetivo
+                                            apenas nos primeiros 8 minutos da partida.</li>
                                     </ul>
                                 </div>
 
@@ -2241,9 +2298,14 @@
                                     </h3>
 
                                     <ul>
-                                        <li>As tartarugas farão uma entrada e saída mais chocantes! Os heróis da rota lateral têm mais poder de decisão sobre se devem participar de lutas de equipe perto das Tartarugas.</li>
-                                        <li>Novo Efeito: 10s antes/depois da Tartaruga aparecer ou sair, o rio gera uma forte corrente fluindo em direção/afastamento delas. Siga o fluxo para ganhar até 50% de Velocidade de Movimento adicional.</li>
-                                        <li>Adicionamos uma notificação global 10s antes da Tartaruga aparecer para lembrar os jogadores de usar o rio para as lutas na Tartaruga.
+                                        <li>As tartarugas farão uma entrada e saída mais chocantes! Os heróis da rota
+                                            lateral têm mais poder de decisão sobre se devem participar de lutas de
+                                            equipe perto das Tartarugas.</li>
+                                        <li>Novo Efeito: 10s antes/depois da Tartaruga aparecer ou sair, o rio gera uma
+                                            forte corrente fluindo em direção/afastamento delas. Siga o fluxo para
+                                            ganhar até 50% de Velocidade de Movimento adicional.</li>
+                                        <li>Adicionamos uma notificação global 10s antes da Tartaruga aparecer para
+                                            lembrar os jogadores de usar o rio para as lutas na Tartaruga.
                                         </li>
                                     </ul>
                                 </div>
@@ -2256,12 +2318,17 @@
                                     <ul>
                                         <li>Mais fácil de eliminar e mais recompensador!
                                         </li>
-                                        <li>Os caranguejos agora têm HP muito mais baixo e os carangejos não aparecem mais só nos 2 primeiros miutos. (Caranguejos necrófagos continuam a aparecer).
+                                        <li>Os caranguejos agora têm HP muito mais baixo e os carangejos não aparecem
+                                            mais só nos 2 primeiros miutos. (Caranguejos necrófagos continuam a
+                                            aparecer).
                                         </li>
-                                        <li>Efeito Removido: Eliminar o Caranguejo fornecia recompensa de Ouro adicional durante um período de tempo.
+                                        <li>Efeito Removido: Eliminar o Caranguejo fornecia recompensa de Ouro adicional
+                                            durante um período de tempo.
                                         </li>
-                                        <li> Novo Efeito: O Caranguejo na Rota de EXP agora solta 3 Pergaminhos de EXP, que podem ser coletados para ganhar bônus de EXP. </li>
-                                        <li>O Caranguejo na Rota do Ouro agora solta 3 Ouros, que podem ser coletados como bônus de Ouro.</li>
+                                        <li> Novo Efeito: O Caranguejo na Rota de EXP agora solta 3 Pergaminhos de EXP,
+                                            que podem ser coletados para ganhar bônus de EXP. </li>
+                                        <li>O Caranguejo na Rota do Ouro agora solta 3 Ouros, que podem ser coletados
+                                            como bônus de Ouro.</li>
                                     </ul>
                                 </div>
 
@@ -2276,7 +2343,7 @@
             </div>
 
             <!-- Patch 1.8.47-->
-            <div class="events-tab-content active-tab" content id="patch847">
+            <div class="patch-tab-content active-tab" content id="patch847">
                 <div class="patch">
                     <div id="patch-hero">
                         <div class="patch-content">
@@ -2356,7 +2423,12 @@
                                     </h3>
 
                                     <ul>
-                                        <li>Cici joga o loiô em um herói inimigo alvo e faz com que este se vincule a outro herói inimigo próximo, causando lentidão neles e  forçando-os a ficar a uma determinada distância um do outro. Durante esta habilidade, Cici pode usar o Ataque com loiô para atacar os dois alvos vinculados ao mesmo tempo. Caso apenas um alvo esteja dentro do alcance do Ataque com loiô, Cici irá atacar o mesmo alvo duas vezes.</li>
+                                        <li>Cici joga o loiô em um herói inimigo alvo e faz com que este se vincule a
+                                            outro herói inimigo próximo, causando lentidão neles e forçando-os a ficar a
+                                            uma determinada distância um do outro. Durante esta habilidade, Cici pode
+                                            usar o Ataque com loiô para atacar os dois alvos vinculados ao mesmo tempo.
+                                            Caso apenas um alvo esteja dentro do alcance do Ataque com loiô, Cici irá
+                                            atacar o mesmo alvo duas vezes.</li>
 
                                     </ul>
                                 </div>
@@ -2492,14 +2564,14 @@
     </div>
 
 
-    
+
     <!-- Botão Voltar Topo -->
-    <div class="footer-iconTop" id="scrollToTopBtn"  title="Voltar ao topo">
+    <div class="footer-iconTop" id="scrollToTopBtn" title="Voltar ao topo">
         <a><i class='bx bx-arrow-back'></i></a>
     </div>
 
 
-    
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--Link js-->

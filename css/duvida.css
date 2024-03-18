@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    font-family: var(--poppins-font-family);
+}
+
+:root {
+    --poppins-font-family: 'Poppins', sans-serif;
+    --body-color: #ffffff;
+    --body-alter-color: #4454ff;
+    --main-color: #ff4d55;
+    --hover-color: #f8646c;
+    --container-color: #F5F5F5;
+    --text-alter-color: #0bd2d4;
+    --text-color-slide: #fbfeff;
+    --text-color: #000;
+    --display-flex: 1 1 17rem;
+    --ss-color: #80FE7F;
+    --s-color: #C0FC7F;
+    --a-color: #FFFA7F;
+    --b-color: #FFBF7F;
+    --c-color: #FF7F7F;
+    --d-color: #EF534F;
+}
+
 /*Contatos*/
 
 .contact {
@@ -26,7 +56,7 @@
     flex-wrap: wrap;
 }
 
-.contact form .input-box  input,
+.contact form .input-box input,
 .contact form textarea {
     width: 100%;
     padding: 1.5rem;
@@ -37,7 +67,7 @@
     margin: 0.7rem 0;
 }
 
-.contact form .input-box  input {
+.contact form .input-box input {
     width: 49%;
 }
 
@@ -65,3 +95,7 @@
     background: var(--hover-color);
     transition: 0.3s all linear;
 }
+
+
+
+@media (max-width: 550px) {}

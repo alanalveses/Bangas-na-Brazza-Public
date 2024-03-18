@@ -89,7 +89,7 @@ const furacaozinhoExpand = document.getElementById('furacaozinhoExpand');
 const nevoasExpand = document.getElementById('nevoasExpand');
 
 nanaNormalSkin.addEventListener('click', () => toggleExpand(nanaExpand));
-nanaAquaSkin.addEventListener('click', () => toggleExpand(aquaExpand));
+nanaAquaSkin.addEventListener('click', () => toggleExpand(mechaExpand));
 nanaMechaSkin.addEventListener('click', () => toggleExpand(aquaExpand));
 nanaChapeuSkin.addEventListener('click', () => toggleExpand(chapeuExpand));
 nanaCriadaSkin.addEventListener('click', () => toggleExpand(criadaExpand));
@@ -101,7 +101,7 @@ nanaNevoasSkin.addEventListener('click', () => toggleExpand(nevoasExpand));
 
 closeNana.addEventListener('click', () => closeExpand(nanaExpand));
 closeAqua.addEventListener('click', () => closeExpand(aquaExpand));
-closeMecha.addEventListener('click', () => closeExpand(aquaExpand));
+closeMecha.addEventListener('click', () => closeExpand(mechaExpand));
 closeChapeu.addEventListener('click', () => closeExpand(chapeuExpand));
 closeCriada.addEventListener('click', () => closeExpand(criadaExpand));
 closeElefantinho.addEventListener('click', () => closeExpand(elefantinhoExpand));

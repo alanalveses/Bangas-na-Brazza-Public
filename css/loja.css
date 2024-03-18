@@ -1,24 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    font-family: var(--poppins-font-family);
+}
+
+:root {
+    --poppins-font-family: 'Poppins', sans-serif;
+    --body-color: #ffffff;
+    --body-alter-color: #4454ff;
+    --main-color: #ff4d55;
+    --hover-color: #f8646c;
+    --container-color: #F5F5F5;
+    --text-alter-color: #0bd2d4;
+    --text-color-slide: #fbfeff;
+    --text-color: #000;
+    --display-flex: 1 1 17rem;
+    --ss-color: #80FE7F;
+    --s-color: #C0FC7F;
+    --a-color: #FFFA7F;
+    --b-color: #FFBF7F;
+    --c-color: #FF7F7F;
+    --d-color: #EF534F;
+}
+
 /*Spotlight hero*/
 
-.spotlight-imagens{
+.spotlight .text-justify {
+    margin-bottom: 2rem;
+}
+
+.spotlight-imagens {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .spotlight-image {
-    width: 40%; 
-    height: auto; 
-    display: flex; 
-    
+    width: 40%;
+    height: auto;
+    display: flex;
 
 }
 
-.spotlight-image img {
-    
-}
 
 .spotlight-content {
     display: flex;
@@ -33,6 +64,10 @@
 
 .spotlight-img {
     flex: 1 1 17rem;
+}
+
+.spotlight-img a {
+    margin-bottom: 3rem;
 }
 
 .spotlight-title {
@@ -50,7 +85,8 @@
 
 /* Fragment Shop */
 
-.fragment-shop, .footer-fragment-shop-content {
+.fragment-shop,
+.footer-fragment-shop-content {
     border: 1px solid #D1B161;
     border-radius: 20px;
     background-color: #f3ebd6;
@@ -70,7 +106,7 @@
 }
 
 .fragment-shop-button {
-    margin: 1.5rem 0.5rem 0.1rem 0.5rem  ;
+    margin: 1.5rem 0.5rem 0.1rem 0.5rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -103,7 +139,7 @@
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }
 
-.fragment-skin-content:hover  {
+.fragment-skin-content:hover {
     background-color: #fff;
 }
 
@@ -157,8 +193,14 @@
 }
 
 .footer-fragment-shop {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-top: 1.25rem;
+}
+
+.footer-fragment-shop-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-fragment-shop-content {
@@ -167,18 +209,90 @@
 }
 
 .footer-fragment-shop-content:hover {
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-.footer-fragment-shop-content a p, .footer-fragment-shop-content p  {
+
+.footer-fragment-shop-content p {
     text-decoration: none;
     color: #D1B161;
 }
 
-.footer-fragment-shop-content:hover .footer-fragment-shop-content a p {
+.footer-fragment-shop-content:hover .footer-fragment-shop-content p {
     color: #000;
 }
 
-.footer-fragment-shop-box {
-    display: flex;
+.fragment-question {
+    cursor: pointer;
 }
+
+.fragment-response {
+    display: none;
+}
+
+.question-click {
+    background: #ffffff;
+    border: 1px solid var(--main-color);
+}
+
+.question-click p {
+    color: #000;
+}
+
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1050px) {}
+
+@media (max-width: 952px) {}
+
+@media (max-width: 855px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 680px) {
+    .spotlight-imagens {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .spotlight-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+
+    }
+
+    .fs-content.active {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .fs-content.active {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 450px) {
+    .fs-content.active {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fragment-shop-button {
+        margin: 1.5rem 0 0.1rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border-bottom: 2px solid #f7f0e0;
+    }
+}
+
+@media (max-width: 365px) {}

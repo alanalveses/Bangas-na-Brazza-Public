@@ -28,30 +28,32 @@
             </a>
             <!--Links navegação-->
             <div class="navbar">
-                <ul>
+                <ul class="ul-navbar">
                     <li><a href="index.html" class="nav-link">Heróis</a></li>
                     <li><a href="guia.html" class="nav-link">Guia</a></li>
                     <li><a href="loja.html" class="nav-link">Loja</a></li>
                     <li><a href="novo.html" class="nav-link">Atualização</a></li>
                     <li><a href="eventos.html" class="nav-link">Eventos</a></li>
-                    
-                </ul>
-                <!--Login Btn-->
-                <div class="login-btn">
-                    <span>Login</span>
-                    <i class='bx bx-chevron-down'></i>
-                    <!--|Drop box-->
-                    <div class="drop-login">
-                        <div class="drop-item">
-                            <a href="account.html">Area Do Cliente</a>
-                            <span>Perfil & Chat </span>
-                        </div>
-                        <div class="drop-item">
-                            <a href="duvida.html">Reportar Problema</a>
-                            <span>Suporte & Dúvidas</span>
+                    <!--Login Btn-->
+                    <div class="div-li">
+                        <div class="login-btn">
+                            <span>Login</span>
+                            <i class='bx bx-chevron-down'></i>
+                            <!--|Drop box-->
+                            <div class="drop-login">
+                                <div class="drop-item">
+                                    <a href="account.html">Area Do Cliente</a>
+                                    <span>Perfil & Chat </span>
+                                </div>
+                                <div class="drop-item">
+                                    <a href="duvida.html">Reportar Problema</a>
+                                    <span>Suporte & Dúvidas</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                </ul>
             </div>
             <!--Menu Icon-->
             <div class="menu-icon">
@@ -79,10 +81,10 @@
         </div>
         <div class="tutorial-content">
             <div class="galeria-hero">
-                <div class="galeria-hero-title">
+                <div class="galeria-hero-title gallery-visible">
                     <h3>Nana, a Doce Leonina</h3>
                 </div>
-                <div class="galeria-hero-border">
+                <div class="galeria-hero-border gallery-visible">
                     <div class="galeria-hero-main-alt">
                         <img src="img/herois-destaque/nana-mobile-legends.jpg" class="line-grad" alt="">
                         <div class="grafico-info">
@@ -362,6 +364,42 @@
                 </div>
             </div>
             <div class="text-hero">
+                <div class="galeria-hero-title gallery-hidden">
+                    <h3>Nana, a Doce Leonina</h3>
+                </div>
+                <div class="galeria-hero-border gallery-hidden">
+                    <div class="galeria-hero-main-alt">
+                        <img src="img/herois-destaque/nana-mobile-legends.jpg" class="line-grad" alt="">
+                        <div class="grafico-info">
+                            <div class="container-grafico">
+                                <div class="bar">
+                                    <p>Defesa</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p class="container-p">Ataque</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value1"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p>Efeito de Controle</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value2"></div>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <p>Dificuldade</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-value3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-buttons-actions">
                     <div class="content-buttons-actions">
                         <div class="button-action active" id="button1">Atributos</div>
@@ -803,16 +841,21 @@
                             <div class="dica-feiticos-priorizacoes">
                                 <h3>Feitiços e Priorizações de Skills</h3>
                                 <div class="dica-skills-imagem">
-                                    <!-- Skill Uptade -->
-                                    <div class="button-skill">
+
+                                    <!-- Feitiços de Batalha -->
+                                    <div class="skills-primaria-secundaria">
+                                        <!-- Skill Uptade -->
                                         <h3>Principal</h3>
-                                        <img src="img/herois-destaque/abraco-da-molina.png" alt="">
-                                    </div>
-                                    <!-- Skill Uptade -->
-                                    <div class="button-skill">
                                         <h3>Secundário</h3>
-                                        <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                        <!-- Skill Uptade -->
+                                        <div class="button-skill">
+                                            <img src="img/herois-destaque/abraco-da-molina.png" alt="">
+                                        </div>
+                                        <div class="button-skill">
+                                            <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                        </div>
                                     </div>
+                                    
                                     <!-- Feitiços de Batalha -->
                                     <div class="feiticos-skills">
                                         <h3>Feitiços de Batalha</h3>
@@ -955,19 +998,25 @@
 
                         <!-- Dicas para usar a Nana -->
                         <div class="dica-skills">
-                            <div class="dica-skills-content">
-                                <h3>Feitiços e Prioricações de Skills</h3>
+                            <!-- Prioricações de skills e feitiços  -->
+                            <div class="dica-feiticos-priorizacoes">
+                                <h3>Feitiços e Priorizações de Skills</h3>
                                 <div class="dica-skills-imagem">
-                                    <!-- Skill Uptade -->
-                                    <div class="button-skill">
+                                    
+                                    <!-- Feitiços de Batalha -->
+                                    <div class="skills-primaria-secundaria">
+                                        <!-- Skill Uptade -->
                                         <h3>Principal</h3>
-                                        <img src="img/herois-destaque/abraco-da-molina.png" alt="">
-                                    </div>
-                                    <!-- Skill Uptade -->
-                                    <div class="button-skill">
                                         <h3>Secundário</h3>
-                                        <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                        <!-- Skill Uptade -->
+                                        <div class="button-skill">
+                                            <img src="img/herois-destaque/abraco-da-molina.png" alt="">
+                                        </div>
+                                        <div class="button-skill">
+                                            <img src="img/herois-destaque/bumerangue-magico.png" alt="">
+                                        </div>
                                     </div>
+                                    
                                     <!-- Feitiços de Batalha -->
                                     <div class="feiticos-skills">
                                         <h3>Feitiços de Batalha</h3>
@@ -976,16 +1025,6 @@
                                             <img src="img/herois-destaque/flameshot-feitico.png" alt="">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Texto argumentativo  -->
-                                <div class="dica-skills-description">
-                                    <p>
-                                        Priorize a skill “2” para maximizar, lembrando que sempre que estiver disponível
-                                        escolha a ultimate. Sugerimos a skill "2" pelo fato de Nana transformar seus
-                                        inimigos em chinchilas, pois se você precisará escapar se for pego de alguma
-                                        forma conseguirá tempo para fugir, já que você não não tenho exatamente
-                                        habilidade para correr.
-                                    </p>
                                 </div>
                             </div>
                         </div>

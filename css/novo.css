@@ -1,25 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    font-family: var(--poppins-font-family);
+}
+
+:root {
+    --poppins-font-family:'Poppins', sans-serif;
+    --body-color:#ffffff;
+    --body-alter-color:#4454ff;
+    --main-color:#ff4d55;
+    --hover-color:#f8646c;
+    --container-color:#F5F5F5;
+    --text-alter-color:#0bd2d4;
+    --text-color-slide:#fbfeff;
+    --text-color:#000;
+    --display-flex: 1 1 17rem;
+    --ss-color:#80FE7F;
+    --s-color: #C0FC7F;
+    --a-color: #FFFA7F;
+    --b-color: #FFBF7F;
+    --c-color: #FF7F7F;
+    --d-color: #EF534F;
+}
+
+/* Revamp Hero */
+
+.revamp-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.revamp-hero-text {
+    flex: 1 1 17rem;
+}
+
+.revamp-hero-img {
+    flex: 1 1 17rem;
+    margin-bottom: 2rem;
+}
+
+.revamp-hero-title {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.revamp-hero-text p {
+    font-size: 0.938rem;
+    text-align: justify;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.revamp-hero-accordion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
 .centro {
     display: flex;
     justify-content: center;
     margin-bottom: 3.25rem;
 }
-.events-tabs {
+
+.patch-tabs {
     display: flex;
     justify-content: center;
     column-gap: 1.75rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
-.events-tab {
+.patch-tab {
     font-size: 35px;
     cursor: pointer;
 }
 
-.events-tab.active-tab {
+.patch-tab.active-tab {
     color: #ff4d55;
 }
 
-.events-tab-content:not(.active-tab) {
+.patch-tab-content:not(.active-tab) {
     display: none;
 }
 
@@ -90,27 +158,31 @@
 
 /*Patch Note*/
 
+.patchnote p {
+    margin-bottom: 1rem;
+}
+
 .buff {
     background-color:green;
-    padding:2px 4px 2px 4px;
+    padding: 0.125rem 0.25rem;
     color:white;
-    font-size:10px;
+    font-size: 0.625rem;
     vertical-align:middle;
 }
 
 .nerf {
     background-color:#db1f28;
-    padding:2px 4px 2px 4px;
+    padding: 0.125rem 0.25rem;
     color:white;
-    font-size:10px;
+    font-size: 0.625rem;
     vertical-align:middle;
 }
 
 .ajust {
     background-color:#eb941a;
-    padding:2px 4px 2px 4px;
+    padding: 0.125rem 0.25rem;
     color:white;
-    font-size:10px;
+    font-size: 0.625rem;
     vertical-align:middle;
 }  
 
@@ -166,3 +238,8 @@
 }
 
 
+@media (max-width: 617px) {
+    .revamp-hero {
+        flex-direction: column-reverse;
+    }
+}

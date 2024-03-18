@@ -1,6 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    font-family: var(--poppins-font-family);
+}
+
+:root {
+    --poppins-font-family:'Poppins', sans-serif;
+    --body-color:#ffffff;
+    --body-alter-color:#4454ff;
+    --main-color:#ff4d55;
+    --hover-color:#f8646c;
+    --container-color:#F5F5F5;
+    --text-alter-color:#0bd2d4;
+    --text-color-slide:#fbfeff;
+    --text-color:#000;
+    --display-flex: 1 1 17rem;
+    --ss-color:#80FE7F;
+    --s-color: #C0FC7F;
+    --a-color: #FFFA7F;
+    --b-color: #FFBF7F;
+    --c-color: #FF7F7F;
+    --d-color: #EF534F;
+}
+/*Eventos iniciantes*/
+
 .events {
 
 }
+
+.img-events {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.img-events img {
+    border-radius: 20px;
+    border: 3px solid var(--main-color);
+    max-width: 45rem;
+}
+
+.teste-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--container-color);
+    border-radius: 50%;
+    padding: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
 
 .button-event {
     background: #ccc;
@@ -67,10 +124,25 @@
     margin-bottom: 4rem;
 }
 
+@media (max-width: 740px) {
+    .events-tab {
+        font-size: 1.5rem;
+    }
+    .img-events {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+    
+    .img-events img {
+        max-width: 35rem;
+    }
+}
 
 @media (max-width: 550px) {
     .events-tab {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     
 }
