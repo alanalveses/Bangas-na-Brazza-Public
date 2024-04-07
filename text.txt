@@ -1,0 +1,5 @@
+<span class="ajust">ADJUSTE&nbsp;~</span>
+<span class="buff">BUFF&nbsp;↑</span>
+<span class="nerf">NERF&nbsp;↓</span>
+<span class="new">New&nbsp;+</span>
+<span class="revamp">Atualizado&nbsp;#</span>

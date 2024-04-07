@@ -30,20 +30,6 @@ iframe {
 
 /*GUIA*/
 
-.prices {
-    width: 100%;
-    height: auto;
-    display: grid;
-    place-items: center;
-    background-image: linear-gradient(
-        rgb(23,27,68,87%) 100%, 
-        rgb(23,27,68,87%) 100%
-        ), url(img/herois-png/benedetta-death-oath.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-}
-
 .guia-slide {
     width: 100%;
     height: auto;

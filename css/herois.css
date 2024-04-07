@@ -167,6 +167,25 @@
     width: 300px;
     padding-bottom: 10px !important;
 }
+
+.card-ss .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--ss-color);
+}
+.card-s .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--s-color);
+}
+.card-a .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--a-color);
+}
+.card-b .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--b-color);
+}
+.card-c .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--c-color);
+}
+.card-d .card-contents .tierlist-hero .text-center a img {
+    border: 3px solid var(--d-color);
+}
  
 .card-header {
     border-radius: 10px;
@@ -251,43 +270,25 @@
 .ss-color {
     background-color: var(--ss-color);
 }
-.ss-border {
-    border: 3px solid var(--ss-color);
-}
 
 .s-color {
     background-color:var(--s-color);
-}
-.s-border {
-    border: 3px solid var(--s-color);
 }
 
 .a-color {
     background-color:var(--a-color);
 }
-.a-border {
-    border: 3px solid var(--a-color);
-}
 
 .b-color {
     background-color: var(--b-color);
-}
-.b-border {
-    border: 3px solid var(--b-color);
 }
 
 .c-color {
     background-color: var(--c-color);
 }
-.c-border {
-    border: 3px solid var(--c-color);
-}
 
 .d-color {
     background-color: var(--d-color);
-}
-.d-border {
-    border: 3px solid var(--d-color);
 }
 
 
