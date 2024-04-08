@@ -40,7 +40,7 @@
             rgb(23, 27, 68, 0.87) 10%), url(/img/herois-png/moskov-foreboding-shadow-abyss.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 
 .guia-text {

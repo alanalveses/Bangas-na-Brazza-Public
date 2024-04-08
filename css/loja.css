@@ -28,6 +28,16 @@
     --d-color: #EF534F;
 }
 
+.loja-slide-description span {
+    color: var(--main-color);
+}
+
+.loja-slide-description {
+    max-width: 450px;
+    font-size: 0.938rem;
+    margin: 0.2rem 0 1rem;
+    color: var(--text-color-slide);
+}
 /*Spotlight hero*/
 
 .spotlight .text-justify {
