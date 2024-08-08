@@ -850,6 +850,11 @@ li.dropdown {
     font-size: 0.82rem;
 }
 
+.copyright p a {
+    text-decoration: none;
+    color: var(--body-alter-color);
+}
+
 .payments {
     text-decoration: none !important;
     color: #d4d4d4 !important;
@@ -970,6 +975,12 @@ li.dropdown {
     .ul-navbar .div-li {
         margin-left: 0;
     }
+
+    .copyright {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
 }
 
 @media (max-width: 860px) {
